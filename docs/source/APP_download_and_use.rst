@@ -1,12 +1,28 @@
-APP Download And Speech Recognition Operation
-=============================================
+Multiple Control Options
+========================
 
-- This kit enables remote monitoring and operation via a mobile app (supporting iOS and Android). After downloading and installing, users can view real-time sensor data (temperature, humidity, light intensity, rain, and motion detection), and control all the components in the kit (doors, windows, lights, fans, RGB light strips, etc.). The user interface is simple and intuitive, making it easy to get started quickly.
-- In addition, the kit supports voice recognition control, allowing users to turn the lights, fans, and RGB light strips on and off, and adjust the volume, providing a more convenient user-computer interaction experience.
+（此处会插入一段功能展示视频）
 
+*This kit integrates multiple interaction methods, enabling automatic control via sensors, remote monitoring and operation via a mobile app, and voice control. These diverse interaction modes make learning and experiencing smart homes more intuitive, convenient, and enriching.*
+
+----
+
+Automatic Control
+-----------------
+
+ - When the raindrop sensor detects rain, the servo automatically closes the windows.
+ - When the brightness sensor detects a darkening environment and the presence sensor detects a person passing by, the LED automatically illuminates.
+ - When the DHT11 temperature and humidity sensor detects excessive temperature, the fan automatically turns on to cool the door.
+ - When a button press is detected, the RGB ambient lighting mode switches to different modes, creating a variety of lighting effects.
+ - In automatic mode, placing an ID card near the RFID sensor triggers the servo to open the door.
+
+----
+
+App control
+------------
 
 APP Download
-------------
+~~~~~~~~~~~~
 
 - Android phones can download it by clicking this link and follow the phone's prompts to complete the installation.  
   `APP Download <https://www.dropbox.com/scl/fi/j6oue7pij59qyy9cwqclh/CH34x_Install_Windows_v3_4.zip?rlkey=xttzwik1qp56naxw8v7ostmkq&e=1&st=kcy0xjl1&dl=0>`_
@@ -23,7 +39,7 @@ APP Download
 
 
 APP Usage Guide
----------------
+~~~~~~~~~~~~~~~
 
 1. Open the downloaded and installed application, the interface is as follows.  
 
@@ -87,7 +103,9 @@ APP Usage Guide
 
    <div style="margin-top: 30px;"></div>
 
-Speech Recognition Operation
+----
+
+Speech Recognition control
 ----------------------------
 
 This kit supports voice recognition, allowing users to directly control LED lights, fans, doors and windows, and adjust the volume through voice commands.  
