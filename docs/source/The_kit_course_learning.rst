@@ -53,5 +53,5 @@ delay(10): Wait 10ms each time the brightness is changed. You can change the bre
 
 ----
 
-Course 1：light Sensor
+Course 2：Light Sensor
 ----------------------
