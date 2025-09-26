@@ -178,3 +178,51 @@ Course 3：PIR Sensor-Human Body Detection
 
 ----
 
+Course 4：Raindrop Sensor-Raindrop Detection
+--------------------------------------------
+
+**Working principle:** 
+ - When water droplets land on the electrode plates, they create conduction or change resistance. The sensor converts this change in conductance/resistance into a voltage signal. Outputs can be:
+ - Digital signal: HIGH indicates a water droplet is detected, LOW indicates no water droplets.
+ - Analog signal: The voltage value changes with the amount of water droplets.
+
+**wiring:** Raindrop Sensor → ESP32 IO35
+
+**Sample Code:**
+
+.. code-block:: cpp
+
+   #include <Arduino.h>
+
+   // Define rain sensor pin
+   const int rainSensorPin = 35;  // S pin connected to GPIO35
+
+   void setup() {
+       // Initialize serial communication at 115200 baud
+       Serial.begin(115200);
+       delay(1000);  // Give time for Serial Monitor to start
+
+       // Set rain sensor pin as input
+       pinMode(rainSensorPin, INPUT);
+
+       Serial.println("Rain Sensor Test Started");
+   }
+
+   void loop() {
+       // Read digital value from rain sensor
+       int rainDetected = digitalRead(rainSensorPin);
+
+       if (rainDetected == HIGH) {
+           // Rain detected
+           Serial.println("Rain Detected!");
+       } else {
+           // No rain
+           Serial.println("No Rain");
+       }
+
+       // Delay 3000 milliseconds before next reading
+       delay(3000);
+   }
+
+----
+
