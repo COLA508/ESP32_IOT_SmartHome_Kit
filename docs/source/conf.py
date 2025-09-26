@@ -4,7 +4,10 @@ copyright = '2025, Lafvin'
 author = 'Lafvin'
 
 # -- General configuration ---------------------------------------------------
-extensions = ["myst_parser","sphinx_copybutton"]
+extensions = [
+    "myst_parser",
+    "sphinx_copybutton",  # 启用复制按钮插件
+]
 
 from pygments.lexers import Python3Lexer
 pygments_lexers = {
@@ -18,6 +21,10 @@ source_suffix = {
 
 templates_path = ['_templates']
 exclude_patterns = []
+
+# sphinx-copybutton 配置
+copybutton_prompt_text = ""  # 去掉默认命令行提示符
+copybutton_icon = "📋"       # 复制按钮图标，可改为其他符号
 
 # -- Options for HTML output -------------------------------------------------
 html_theme = 'sphinx_rtd_theme'
