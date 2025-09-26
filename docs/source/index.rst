@@ -5,11 +5,5 @@ Smart Home Quick Start Guide
    :maxdepth: 2
    :caption: Contents
 
+   Assembly_Tutorial
    Introduction
-   install_arduino_ide
-   install_CH340
-   install_ESP32
-   add_libraries
-   Upload_code_to_ESP32
-   APP_download_and_use
-   Direct_burning_program
