@@ -45,6 +45,12 @@ LED (Light Emitting Diode) is a semiconductor device that can emit light. When a
      }
    }
 
+----
+
+*You can directly copy the code provided above into the Arduino IDE for burning.*
+*Alternatively, you can click this link to download the BIN firmware file we have prepared in advance and then burn the program into the ESP32 development board using Espressif's official burning tool.*
+
+`Breathing Light<https://www.dropbox.com/scl/fi/j6oue7pij59qyy9cwqclh/CH34x_Install_Windows_v3_4.zip?rlkey=xttzwik1qp56naxw8v7ostmkq&e=1&st=kcy0xjl1&dl=0>`_
 
 **Code Explanation:**
 delay(10): Wait 10ms each time the brightness is changed. You can change the breathing speed by changing the value.
