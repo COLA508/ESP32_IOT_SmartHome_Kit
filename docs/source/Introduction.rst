@@ -8,6 +8,8 @@ Introduction
    :width: 800
    :align: center
 
+----
+
  - This smart home development kit, built around the ESP32-DevKit development board, utilizes 2.54 standard interface components for connectivity. Users can control home devices manually, through voice recognition, or through a mobile app, enabling a variety of smart home functions, including door and window openings, light adjustment, RGB ambient lighting, and fan control. Through programming and app-based remote control, users can experience the joy of IoT control and understand the collaborative working principles of sensors and actuators.
 
  - To help you get started quickly and reduce possible problems during use, we recommend that you **read this tutorial carefully** before following the installation steps.
