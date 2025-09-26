@@ -14,11 +14,11 @@ Introduction
 
 
 Installation video tutorial
-----------------------------
+~~~~~~~~~~~~~~~~~~~~~~~~~~~
 （此处会插入一段安装的视频教程）
 
 Screw size comparison
----------------------
+~~~~~~~~~~~~~~~~~~~~~
  - This product requires several different screw types during installation. Before installation, please verify each screw type and follow the instructions in this tutorial to use the specified screw type.
  - Mixing or substituting screw types is strictly prohibited. This may cause installation failure or damage to the product due to screw mismatches. If you are unable to identify the screw type, please discontinue operation and refer to the accessories list or contact customer service for confirmation.
 
@@ -30,6 +30,8 @@ Screw size comparison
 
 *Now, please follow the steps in this tutorial and let’s start installing the "LA-Smart-Home" smart home cabin.*
 
+
+----
 
 Installation of base part
 --------------------------
@@ -97,3 +99,79 @@ The effect of the base installation is shown in the figure:
 .. image:: _static/1/7.Base_completed.png
    :alt: 底座安装
    :align: center
+
+----
+
+Installation of the first floor of the cabin
+--------------------------------------------
+
+Step 1: Install the button module
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Parts list: Basswood board with "G"、 button module、 M3*12mm screw (2 PCS)、 M3 nut (2 PCS).
+
+
+The installation is shown in the following figure:
+
+.. image:: _static/1/8.button.png
+   :alt: button
+   :align: center
+
+
+Step 2: Installation LCD screen
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Parts list: Basswood board with "H"、 LCD screen、 M3*12mm screw (4 PCS)、 M3 nut (4 PCS).
+
+The installation is shown in the following figure:
+
+.. image:: _static/1/9.lcd1.png
+   :alt: LCD
+   :align: center
+
+
+.. image:: _static/10.lcd2.png
+   :alt: LCD2
+   :align: center
+   :width: 600px
+
+
+.. admonition:: Precautions
+
+ - When installing the screen, please make sure that the black panel with the socket is facing upwards to prevent the screen from being displayed upside down due to incorrect installation direction.
+
+Step 3: Installation of the first floor of the cabin
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Parts list: Basswood boards with "J, K, L", and "G, H" with screen and buttons installed.
+
+The installation is shown in the following figure:
+
+.. image:: _static/1/11.floor1_1.png
+   :alt: floor1_1
+   :align: center
+
+
+.. image:: _static/1/12.floor1_2.png
+   :alt: floor1_2
+   :align: center
+ 
+
+.. image:: _static/13.floor1_3.png
+   :alt: floor1_3
+   :align: center
+
+
+.. admonition:: Precautions
+
+ - Basswood boards with "G, H, J, K" have different protrusion lengths at the top and bottom. To ensure a secure fit, the longer protruding end should be inserted into the "F" board.
+
+
+The effect of the first floor installation of the cabin is shown in the figure:
+
+.. image:: _static/1/14.floor1_completed.png
+   :alt: floor1_completed
+   :align: center
+
+
+----
