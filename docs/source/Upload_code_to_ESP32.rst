@@ -64,6 +64,10 @@ Check Board and Port Selection
    :align: center
 
 
+.. raw:: html
+
+   <div style="margin-top: 30px;"></div>
+   
 Upload Code
 -----------
 
@@ -78,6 +82,10 @@ Upload Code
 .. image:: _static/40.upload.png
    :width: 600
    :align: center
+
+.. raw:: html
+
+   <div style="margin-top: 30px;"></div>
 
 3. When the message **"Leaving... Hard resetting via RTS pin..."** appears in the Output window, the code has been uploaded successfully. Press the **RST** button on the ESP32 board to start running the program.  
 
