@@ -8,5 +8,48 @@ The  Kit Course Learning
 
 ----
 
-LED Module
-----------
+Course 1：LED Module
+-------------------
+
+**Working principle:** 
+LED (Light Emitting Diode) is a semiconductor device that can emit light. When a forward voltage is applied, the LED conducts in a single direction and emits light. By controlling the high and low levels of the circuit it is connected to, it can be turned on or off.
+
+**wiring:** LED Module → ESP32 GPIO26
+
+**Sample Code:**
+
+.. code-block:: cpp
+   :caption: Breathing LED Example
+
+   #include <Arduino.h>
+   const int ledPin = 26;   // LED PIN
+   const uint32_t freq = 5000;
+   const uint8_t resolution = 8;  // 0-255
+   void setup() {
+     Serial.begin(115200);
+     Serial.println("breathing light");
+
+     ledcAttach(ledPin, freq, resolution);
+   }
+
+   void loop() {
+     // Bright
+     for (int duty = 0; duty <= 255; duty++) {
+       ledcWrite(ledPin, duty);
+       delay(2);
+     }
+
+     // dark
+     for (int duty = 255; duty >= 0; duty--) {
+       ledcWrite(ledPin, duty);
+       delay(2);
+     }
+   }
+
+
+**Code Explanation:**
+delay(10): Wait 10ms each time the brightness is changed. You can change the breathing speed by changing the value.
+ - Smaller value → faster breathing light
+ - Larger value → slower breathing light
+
+----
