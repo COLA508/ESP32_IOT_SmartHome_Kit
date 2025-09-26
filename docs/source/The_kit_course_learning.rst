@@ -159,10 +159,18 @@ Course 3：PIR Sensor-Human Body Detection
    }
 
 ----
-**Effect display:**
-When the PIR sensor detects human movement, the blue indicator light will turn on.
 
-The **serial monitor** will output whether a human body is detected.
+
+**Code burning options**
+
+ - You can directly copy the code provided above into the Arduino IDE for burning.
+ - Find the **3.HumanBodyDetection.ino** file in the provided folder, download it, open it with the Arduino IDE, and burn the program to the ESP32 development board.
+ - Alternatively, you can click this link to download the BIN firmware file we have prepared in advance and then burn the program into the ESP32 development board using Espressif's official burning tool. `3.HumanBodyDetection <https://www.dropbox.com/scl/fi/j6oue7pij59qyy9cwqclh/CH34x_Install_Windows_v3_4.zip?rlkey=xttzwik1qp56naxw8v7ostmkq&e=1&st=kcy0xjl1&dl=0>`_  
+
+
+**Effect display:**
+1. When the PIR sensor detects human movement, the blue indicator light will turn on.
+2. The **serial monitor** will output whether a human body is detected.
 
 .. image:: _static/2/3.PIR.png
    :width: 600
