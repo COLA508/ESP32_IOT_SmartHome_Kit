@@ -15,7 +15,7 @@ Course 1：LED Module-Breathing Light
 **Working principle:** 
 LED (Light Emitting Diode) is a semiconductor device that can emit light. When a forward voltage is applied, the LED conducts in a single direction and emits light. By controlling the high and low levels of the circuit it is connected to, it can be turned on or off.
 
-**wiring:** LED Module → ESP32 GPIO26
+**wiring:** LED Module → ESP32 IO26
 
 **Sample Code:**
 
@@ -60,5 +60,51 @@ LED (Light Emitting Diode) is a semiconductor device that can emit light. When a
 
 ----
 
-Course 2：Light Sensor
+Course 2：Light Sensor-Brightness Detection
 ----------------------
+
+**Working principle:** 
+Light intensity affects the resistance or current of the sensor element. After internal voltage division, an analog voltage output is generated. The ESP32 reads the voltage value through the ADC and can calculate the current ambient brightness.
+
+**wiring:** Light Sensor → ESP32 IO34
+
+.. code-block:: cpp
+
+   #include <Arduino.h>
+
+   // Define sensor pin
+   const int lightSensorPin = 34;  // S pin connected to GPIO34 (ADC input)
+
+   void setup() {
+       Serial.begin(115200);
+       delay(1000);
+       Serial.println("Light Sensor Test Started");
+   }
+
+   void loop() {
+       int sensorValue = analogRead(lightSensorPin);
+       float brightnessPercent = sensorValue * 100.0 / 4095.0;
+       Serial.print("ADC Value: ");
+       Serial.print(sensorValue);
+       Serial.print("  |  Brightness: ");
+       Serial.print(brightnessPercent);
+       Serial.println("%");
+       delay(3000);
+   }
+
+----
+
+**Code burning options**
+
+ - You can directly copy the code provided above into the Arduino IDE for burning.
+ - Find the **2.BrightnessDetection.ino** file in the provided folder, download it, open it with the Arduino IDE, and burn the program to the ESP32 development board.
+ - Alternatively, you can click this link to download the BIN firmware file we have prepared in advance and then burn the program into the ESP32 development board using Espressif's official burning tool. `1.BreathingLight <https://www.dropbox.com/scl/fi/j6oue7pij59qyy9cwqclh/CH34x_Install_Windows_v3_4.zip?rlkey=xttzwik1qp56naxw8v7ostmkq&e=1&st=kcy0xjl1&dl=0>`_  
+
+**Effect display**
+The surrounding brightness data will be output every 3 seconds on the **serial monito**
+
+.. image:: _static/2/2.light.png
+   :width: 600
+   :align: center
+
+----
