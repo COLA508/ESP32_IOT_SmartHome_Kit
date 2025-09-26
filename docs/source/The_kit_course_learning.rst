@@ -5,6 +5,7 @@ The  Kit Course Learning
  - In this section, we'll individually introduce each component and functional module included in the kit, from basic sensors and actuators to communication modules, to help you systematically understand their functions and usage. 
  - By studying the working principles of these components, you'll not only master how to connect and control modules in real-world projects, but also gain a deeper understanding of how IoT systems achieve environmental perception, intelligent linkage, and remote operation. 
  - This will lay a solid foundation for your subsequent experiments, course design, and IoT project development, allowing you to better grasp the core knowledge of smart hardware and the Internet of Things.
+ - Click this link to download all the example code provided with this kit. `Download sample code <https://www.dropbox.com/scl/fi/j6oue7pij59qyy9cwqclh/CH34x_Install_Windows_v3_4.zip?rlkey=xttzwik1qp56naxw8v7ostmkq&e=1&st=kcy0xjl1&dl=0>`_  
 
 ----
 
@@ -46,9 +47,11 @@ LED (Light Emitting Diode) is a semiconductor device that can emit light. When a
    }
 
 ----
+**Code burning options**
 
  - You can directly copy the code provided above into the Arduino IDE for burning.
- - Alternatively, you can click this link to download the BIN firmware file we have prepared in advance and then burn the program into the ESP32 development board using Espressif's official burning tool. `BreathingLight <https://www.dropbox.com/scl/fi/j6oue7pij59qyy9cwqclh/CH34x_Install_Windows_v3_4.zip?rlkey=xttzwik1qp56naxw8v7ostmkq&e=1&st=kcy0xjl1&dl=0>`_  
+ - Find the **1.BreathingLight.ino**file in the provided folder, download it, open it with the Arduino IDE, and burn the program to the ESP32 development board.
+ - Alternatively, you can click this link to download the BIN firmware file we have prepared in advance and then burn the program into the ESP32 development board using Espressif's official burning tool. `1.BreathingLight <https://www.dropbox.com/scl/fi/j6oue7pij59qyy9cwqclh/CH34x_Install_Windows_v3_4.zip?rlkey=xttzwik1qp56naxw8v7ostmkq&e=1&st=kcy0xjl1&dl=0>`_  
 
 **Code Explanation:**
 *delay(10):* Wait 10ms each time the brightness is changed. You can change the breathing speed by changing the value.
