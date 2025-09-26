@@ -7,7 +7,8 @@ Direct Burning Program
 Install CH340 Driver
 --------------------
 
-- Similarly, before using Espressif's official flashing tool, you must first install the CH340 driver so that the ESP32 development board can communicate properly with your computer. If the CH340 driver is not installed, please see the CH340 driver installation tutorial page: :doc:`install_CH340`.
+- Similarly, before using Espressif's official flashing tool, you must first install the CH340 driver so that the ESP32 development board can communicate properly with your computer. If the CH340 driver is not installed, please see the CH340 driver installation tutorial page: See :ref:`install_ch340_driver` for detailed instructions.
+
 
 
 Download burning tools
