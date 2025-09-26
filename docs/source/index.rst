@@ -5,5 +5,6 @@ Smart Home Quick Start Guide
    :maxdepth: 2
    :caption: Contents
 
-   Assembly_Tutorial
    Introduction
+   Assembly_Tutorial
+   
