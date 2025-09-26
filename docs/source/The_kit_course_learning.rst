@@ -8,8 +8,8 @@ The  Kit Course Learning
 
 ----
 
-Course 1：LED Module
--------------------
+Course 1：LED Module-Breathing Light
+-----------------------------------
 
 **Working principle:** 
 LED (Light Emitting Diode) is a semiconductor device that can emit light. When a forward voltage is applied, the LED conducts in a single direction and emits light. By controlling the high and low levels of the circuit it is connected to, it can be turned on or off.
