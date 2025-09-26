@@ -21,10 +21,9 @@ Automatic Control
 App control
 ------------
 
-APP Download
-~~~~~~~~~~~~
+**APP Download**
 
-- Android phones can download it by clicking this link and follow the phone's prompts to complete the installation.  
+- Android devices can download it by clicking this link and follow the phone's prompts to complete the installation.  
   `APP Download <https://www.dropbox.com/scl/fi/j6oue7pij59qyy9cwqclh/CH34x_Install_Windows_v3_4.zip?rlkey=xttzwik1qp56naxw8v7ostmkq&e=1&st=kcy0xjl1&dl=0>`_
 
 - iOS devices can download the app from the App Store. Search for "LAFVIN" to find and install it, or scan the QR code below to jump to the download page.  
@@ -37,9 +36,9 @@ APP Download
    :width: 600
    :align: center
 
+----
 
-APP Usage Guide
-~~~~~~~~~~~~~~~
+**APP Usage Guide**
 
 1. Open the downloaded and installed application, the interface is as follows.  
 
@@ -126,3 +125,5 @@ This kit supports voice recognition, allowing users to directly control LED ligh
 .. note::
 
    - The system only recognizes the following preset commands. Voice content outside the range will not take effect.
+
+----
