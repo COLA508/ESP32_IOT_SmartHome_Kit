@@ -14,11 +14,11 @@ Introduction
 
 
 Installation video tutorial
------------
+----------------------------
 （此处会插入一段安装的视频教程）
 
 Screw size comparison
-------------
+---------------------
  - This product requires several different screw types during installation. Before installation, please verify each screw type and follow the instructions in this tutorial to use the specified screw type.
  - Mixing or substituting screw types is strictly prohibited. This may cause installation failure or damage to the product due to screw mismatches. If you are unable to identify the screw type, please discontinue operation and refer to the accessories list or contact customer service for confirmation.
 
@@ -32,10 +32,10 @@ Screw size comparison
 
 
 Installation of base part
-===========================
+--------------------------
 
 Step 1: Install the ESP32 development board
----------------------------
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Parts list: Basswood board with "A"、 ESP32 development board、 M3*8mm screw (8 PCS)、 M3*16mm copper pillar (4 PCS).
 
@@ -55,7 +55,7 @@ The installation is shown in the following figure:
  - The serial numbers on the basswood boards are used only to distinguish one board from another. In the tutorial examples, the serial numbers face outward for ease of illustration, but they should face inward during installation. This principle should also be followed for subsequent basswood installations.
 
 Step 2: Install the battery box
----------------------------
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Parts list: battery box、 M3*10mm flat head screw (2 PCS)、 M3 nut (2 PCS).
 
@@ -71,7 +71,7 @@ The installation is shown in the following figure:
  - When securing the battery compartment, use flat-head screws. If you use round-head screws, the screws will protrude and press against the battery, preventing it from being installed properly.
 
 Step 3: Install the base
----------------------------
+~~~~~~~~~~~~~~~~~~~~~~~~
 
 Parts list: Basswood boards with "B, C, D, E, F"、 blue latch (6 PCS).
 
