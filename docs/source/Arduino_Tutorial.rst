@@ -114,7 +114,7 @@ If you connect the board to the computer without installing the driver, the devi
    :align: center
 
 
-Downloading the Driver
+Download the Driver
 ~~~~~~~~~~~~~~~~~~~~
 
 1. Visit the official website of the CH340 Driver:  
@@ -137,7 +137,7 @@ Downloading the Driver
    `Installation Package (Windows) <https://www.dropbox.com/scl/fi/j6oue7pij59qyy9cwqclh/CH34x_Install_Windows_v3_4.zip?rlkey=xttzwik1qp56naxw8v7ostmkq&e=1&st=kcy0xjl1&dl=0>`_  
 
 
-Installing the Driver
+Install the Driver
 ~~~~~~~~~~~~~~~~~~~~
 
 1. After downloading, open the driver file and click **Install**.  
@@ -194,7 +194,7 @@ Checking Correct Driver Installation in Arduino IDE
 
 ----
 
-Installing The ESP32 Core Board 
+Install The ESP32 Core Board 
 ---------------------------------
 
 Add Additional Boards Manager URL

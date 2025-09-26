@@ -8,3 +8,5 @@ ESP32 IOT SmartHome Kit
    Introduction
    Assembly_Tutorial
    Arduino_Tutorial
+   Upload_code_to_ESP32
+   
