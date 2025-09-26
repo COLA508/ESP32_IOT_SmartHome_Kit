@@ -1,5 +1,5 @@
 # -- Project information -----------------------------------------------------
-project = 'Smart Home Quick Start Guide'
+project = 'ESP32 IOT SmartHome Kit'
 copyright = '2025, Lafvin'
 author = 'Lafvin'
 
