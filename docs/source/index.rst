@@ -1,5 +1,5 @@
-Smart Home Quick Start Guide
-===========================
+ESP32 IOT SmartHome Kit
+=======================
 
 .. toctree::
    :maxdepth: 2
@@ -7,4 +7,3 @@ Smart Home Quick Start Guide
 
    Introduction
    Assembly_Tutorial
-   
