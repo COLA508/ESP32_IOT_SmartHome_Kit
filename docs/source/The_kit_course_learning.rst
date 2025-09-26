@@ -19,8 +19,7 @@ LED (Light Emitting Diode) is a semiconductor device that can emit light. When a
 **Sample Code:**
 
 .. code-block:: cpp
-   :caption: Breathing LED Example
-
+  
    #include <Arduino.h>
    const int ledPin = 26;   // LED PIN
    const uint32_t freq = 5000;
