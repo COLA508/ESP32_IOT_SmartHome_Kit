@@ -97,8 +97,8 @@ The effect of the base installation is shown in the figure:
 
 ----
 
-Installation of the first floor of the cabin
---------------------------------------------
+Installation of the first floor
+-------------------------------
 
 Step 1: Install the button module
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -113,7 +113,7 @@ The installation is shown in the following figure:
    :align: center
 
 
-Step 2: Installation LCD screen
+Step 2: Install LCD screen
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Parts list: Basswood board with "H"、 LCD screen、 M3*12mm screw (4 PCS)、 M3 nut (4 PCS).
@@ -135,8 +135,8 @@ The installation is shown in the following figure:
 
  - When installing the screen, please make sure that the black panel with the socket is facing upwards to prevent the screen from being displayed upside down due to incorrect installation direction.
 
-Step 3: Installation of the first floor of the cabin
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Step 3: First floor assembly
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Parts list: Basswood boards with "J, K, L", and "G, H" with screen and buttons installed.
 
@@ -170,13 +170,13 @@ The effect of the first floor installation of the cabin is shown in the figure:
 
 ----
 
-Installation of the second floor of the cabin
----------------------------------------------
+Installation of the second floor
+--------------------------------
 
-Step 1: Installation window 
+Step 1: Install window 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-Step 1-1: Installation of gear and swing arm
+Step 1-1: Install of gear and swing arm
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 Parts list: acrylic gear、 servo bag (one-way swing arm)、 M1.5*5mm self-tapping screw (1 PCS).
 
@@ -230,8 +230,8 @@ Window installation completed effect picture:
 
 ----
 
-Step 2: Installation of the Motor Fan
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Step 2: Install of the Motor Fan
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 Parts list: Basswood board with  "N"、 motor fan module、 M3*12mm screw (2 PCS)、 M3 nut (2 PCS).
 
 Window installation completed effect picture:
@@ -242,8 +242,8 @@ Window installation completed effect picture:
    :width: 600px
 
 
-Step 3: Installing the Solar Charging Panel
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Step 3: Install the Solar Charging Panel
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 Parts list: Basswood board with "R"、 solar charging panel、 solar charging indicator light、 glue.
 
 The installation is shown in the following figure:
@@ -263,8 +263,8 @@ The installation is shown in the following figure:
 
  - First, disconnect the wiring from both ends of the indicator light. Thread the solar panel wiring through the hole marked "R" in the basswood board and connect it to the indicator light wiring. Use some glue to secure it securely.
 
-Step 4: Installation of the Sensor Module
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Step 4: Install of the Sensor Module
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 Parts list: Basswood board with "S"、 DHT11 temperature and humidity sensor、 human infrared sensor、 light-sensitive brightness sensor、 raindrop sensor、 M3*12mm screw (8 PCS)、 M3 nut (8 PCS).
 
 The installation is shown in the following figure:
@@ -280,8 +280,8 @@ The installation is shown in the following figure:
 
 
 
-Step 5: Installation of the second floor of the cabin
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Step 5: Second floor assembly
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Parts list: Basswood boards with  "M、 Q", and "N、 P" basswood boards with components installed.
 
@@ -300,8 +300,8 @@ The installation is shown in the following figure:
 
  - The lengths of the protrusions on the left and right sides of the lower ends of the basswood boards with "N, Q" are different. Please carefully distinguish the directions before installing to ensure a stable structure.
  
-Step 6: Installation roof
-~~~~~~~~~~~~~~~~~~~~~~~~~
+Step 6: Install roof
+~~~~~~~~~~~~~~~~~~~~
 
 Parts List: "S、 R" basswood board with components installed.
 
@@ -315,8 +315,8 @@ The installation is shown in the following figure:
 
    <div style="margin-top: 30px;"></div>
 
-Step 7: Installation of the Second Fence
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Step 7: Install of the Second Fence
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Parts List: Brown basswood fence planks (shorter, 3 PCS).
 
@@ -336,18 +336,18 @@ The effect picture of the second floor of the cabin after installation:
 ----
 
 Installation of  garden
------------------------
+-------------------
 
-Step 1: Installation of the gate
+Step 1: Install of the gate
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-Step 1-1: Installation of gear and swing arm
+Step 1-1: Install of gear and swing arm
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 Parts list: acrylic gear、 servo bag (one-way swing arm)、 M1.5*5mm self-tapping screw (1 PCS).
 
 The installation is shown in the following figure:
 
-.. image:: _static/15.gear.png
+.. image:: _static/1/15.gear.png
    :alt: gate gear
    :align: center
 
@@ -363,7 +363,7 @@ Parts list: Basswood board with "T"、 servo bag (servo)、 M2*30mm screw (2 PCS
 
 The installation is shown in the following figure:
 
-.. image:: _static/28.door_sevro.png
+.. image:: _static/1/28.door_sevro.png
    :alt: door sevro
    :align: center
 
@@ -378,7 +378,7 @@ Parts list: Basswood board with "T"、 gate acrylic driver board (shorter acryli
 
 The installation is shown in the following figure:
 
-.. image:: _static/29.door_acrylic.png
+.. image:: _static/1/29.door_acrylic.png
    :alt: door acrylic
    :align: center
 
@@ -395,13 +395,13 @@ The installation is shown in the following figure:
 
 
 
-Step 1-4: Installation of RFID sensor module
+Step 1-4: Install of RFID sensor module
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 Parts list: Acrylic door drive board and basswood board "T" with servo installed、 RFID sensor module、 M3*12mm screw (2 PCS)、 M3 nut (2 PCS).
 
 The installation is shown in the following figure:
 
-.. image:: _static/30.RFID.png
+.. image:: _static/1/30.RFID.png
    :alt: RFID
    :align: center
 
@@ -411,19 +411,19 @@ The installation is shown in the following figure:
 
 The effect picture of the gate installation is completed:
 
-.. image:: _static/31.door_completed.png
+.. image:: _static/1/31.door_completed.png
    :alt: door completed
    :align: center
 
 
 
-Steps 1-5: Installing the gate to the garden
+Steps 1-5: Install the gate to the garden
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 Parts List: Installed servos、 RFID sensor module、 and acrylic basswood board "T".
 
 The installation is shown in the following figure:
 
-.. image:: _static/32.door2.png
+.. image:: _static/1/32.door2.png
    :alt: gate
    :align: center
 
@@ -439,31 +439,31 @@ Parts list: speech recognition module、 green basswood board、 M3*12mm screw (
 
 The installation is shown in the following figure:
 
-.. image:: _static/33.speech.png
+.. image:: _static/1/33.speech.png
    :alt: speech recognition
    :align: center
 
 
 
-Step 3: Installation of LED Light Module
+Step 3: Install of LED Light Module
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 Parts list: LED light module、 pink basswood board、 M3*12mm screw (2 PCS)、 M3 nut (2 PCS).
 
 The installation is shown in the following figure:
 
-.. image:: _static/34.led.png
+.. image:: _static/1/34.led.png
    :alt: LED
    :align: center
 
 
 
-Step 4: Installing flowers and trees in the garden
+Step 4: Install flowers and trees in the garden
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 Parts list: Green linden wood board with voice recognition module installed、 pink linden wood board with LED light module installed.
 
 The installation is shown in the following figure:
 
-.. image:: _static/35.flower_tree.png
+.. image:: _static/1/35.flower_tree.png
    :alt: flower_tree
    :align: center
 
@@ -472,13 +472,13 @@ The installation is shown in the following figure:
    <div style="margin-top: 30px;"></div>
 
    
-Step 5: Installing the RGB Light Strip
+Step 5: Install the RGB Light Strip
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 Parts list: RGB light strip、 brown basswood fence board (The longest fence).
 
 The installation is shown in the following figure:
 
-.. image:: _static/36.RGB.png
+.. image:: _static/1/36.RGB.png
    :alt: RGB
    :align: center
 
@@ -489,13 +489,13 @@ The installation is shown in the following figure:
  - To achieve the best lighting effect, please stick the RGB light strip in the center of the back of the fence.
 
 
-Step 6: Installation of the Garden Fence
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Step 6: Install of the Garden Fence
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 Parts list: Brown garden fence basswood planks (2 shorter ones)、 fence with RGB light strip installed.
 
 The installation is shown in the following figure:
 
-.. image:: _static/37.garden_fence.png
+.. image:: _static/1/37.garden_fence.png
    :alt: garden fence
    :align: center
 
