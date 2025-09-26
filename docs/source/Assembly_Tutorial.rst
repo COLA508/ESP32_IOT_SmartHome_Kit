@@ -335,8 +335,8 @@ The effect picture of the second floor of the cabin after installation:
 
 ----
 
-Installation of  garden
--------------------
+Installation of  the garden
+---------------------------
 
 Step 1: Install of the gate
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -562,4 +562,3 @@ The installation is shown in the following figure:
  - This cover is convenient for daily device debugging, wiring inspection, and development board status inspection.
 
 ----
-
