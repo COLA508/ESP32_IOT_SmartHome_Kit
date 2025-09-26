@@ -9,6 +9,4 @@ ESP32 IOT SmartHome Kit
    Assembly_Tutorial
    Arduino_Tutorial
    Upload_code_to_ESP32
-   Direct_burning_program
-   APP_download_and_use.rst
-   
+   APP_download_and_use
