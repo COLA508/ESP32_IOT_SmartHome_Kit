@@ -19,7 +19,7 @@ LED (Light Emitting Diode) is a semiconductor device that can emit light. When a
 **Sample Code:**
 
 .. code-block:: cpp
-  
+
    #include <Arduino.h>
    const int ledPin = 26;   // LED PIN
    const uint32_t freq = 5000;
@@ -52,3 +52,6 @@ delay(10): Wait 10ms each time the brightness is changed. You can change the bre
  - Larger value → slower breathing light
 
 ----
+
+Course 1：light Sensor
+----------------------
