@@ -106,9 +106,6 @@ When you open Arduino IDE for the first time:
 Install CH340 Driver
 ---------------------
 
-Install CH340 Driver
----------------------
-
 The ESP32 development board in this kit uses the **CH340C USB-to-serial chip**, so you must install the corresponding driver before using it.  
 
 If you connect the board to the computer without installing the driver, the device will not be recognized correctly, and you may see the following interface in the **Device Manager**:  
