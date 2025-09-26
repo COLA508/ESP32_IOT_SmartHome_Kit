@@ -169,8 +169,8 @@ Course 3：PIR Sensor-Human Body Detection
 
 
 **Effect display:**
-1. When the PIR sensor detects human movement, the blue indicator light will turn on.
-2. The **serial monitor** will output whether a human body is detected.
+ - When the PIR sensor detects human movement, the blue indicator light will turn on.
+ - The **serial monitor** will output whether a human body is detected.
 
 .. image:: _static/2/3.PIR.png
    :width: 600
