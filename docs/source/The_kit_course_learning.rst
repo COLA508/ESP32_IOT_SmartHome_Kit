@@ -68,6 +68,8 @@ Light intensity affects the resistance or current of the sensor element. After i
 
 **wiring:** Light Sensor → ESP32 IO34
 
+**Sample Code:**
+
 .. code-block:: cpp
 
    #include <Arduino.h>
@@ -98,9 +100,9 @@ Light intensity affects the resistance or current of the sensor element. After i
 
  - You can directly copy the code provided above into the Arduino IDE for burning.
  - Find the **2.BrightnessDetection.ino** file in the provided folder, download it, open it with the Arduino IDE, and burn the program to the ESP32 development board.
- - Alternatively, you can click this link to download the BIN firmware file we have prepared in advance and then burn the program into the ESP32 development board using Espressif's official burning tool. `1.BreathingLight <https://www.dropbox.com/scl/fi/j6oue7pij59qyy9cwqclh/CH34x_Install_Windows_v3_4.zip?rlkey=xttzwik1qp56naxw8v7ostmkq&e=1&st=kcy0xjl1&dl=0>`_  
+ - Alternatively, you can click this link to download the BIN firmware file we have prepared in advance and then burn the program into the ESP32 development board using Espressif's official burning tool. `2.BrightnessDetection <https://www.dropbox.com/scl/fi/j6oue7pij59qyy9cwqclh/CH34x_Install_Windows_v3_4.zip?rlkey=xttzwik1qp56naxw8v7ostmkq&e=1&st=kcy0xjl1&dl=0>`_  
 
-**Effect display**
+**Effect display:**
 The surrounding brightness data will be output every 3 seconds on the **serial monito**
 
 .. image:: _static/2/2.light.png
@@ -108,3 +110,63 @@ The surrounding brightness data will be output every 3 seconds on the **serial m
    :align: center
 
 ----
+
+Course 3：PIR Sensor-Human Body Detection
+----------------------------------------
+
+**Working principle:** 
+ - Pyroelectric chips sense infrared heat radiated by the human body. 
+ - When a person moves into the sensing area, the temperature on both sides of the chip changes, generating a charge change that outputs a voltage signal. 
+ - The sensor's internal circuitry amplifies the signal and reshapes it into digital high and low levels. 
+ - High indicates a person is present. Low indicates no person is present.
+
+**wiring:** PIR Sensor → ESP32 IO33
+
+**Sample Code:**
+
+.. code-block:: cpp
+
+   #include <Arduino.h>
+
+   // Define PIR sensor pin
+   const int pirPin = 33;  // Signal pin connected to GPIO33
+
+   void setup() {
+       // Initialize serial communication at 115200 baud
+       Serial.begin(115200);
+       delay(1000); // Give time for Serial Monitor to start
+
+       // Set PIR pin as input
+       pinMode(pirPin, INPUT);
+
+       Serial.println("PIR Sensor Test Started");
+   }
+
+   void loop() {
+       // Read PIR sensor digital value
+       int motionDetected = digitalRead(pirPin);
+
+       if (motionDetected == HIGH) {
+           // Motion detected
+           Serial.println("Motion Detected!");
+       } else {
+           // No motion
+           Serial.println("No Motion");
+       }
+
+       // Wait 3000 milliseconds before next reading
+       delay(3000);
+   }
+
+----
+**Effect display:**
+When the PIR sensor detects human movement, the blue indicator light will turn on.
+
+The **serial monitor** will output whether a human body is detected.
+
+.. image:: _static/2/3.PIR.png
+   :width: 600
+   :align: center
+
+----
+
