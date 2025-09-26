@@ -17,7 +17,7 @@ APP Download
    :width: 600
    :align: center
 
-.. image:: _static/USE/52.IOSAPP.png
+.. image:: _static/52.IOSAPP.png
    :width: 600
    :align: center
 
