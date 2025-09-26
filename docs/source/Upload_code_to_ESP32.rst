@@ -26,7 +26,9 @@ Click the link below to download the sample code we have prepared:
    :width: 800
    :align: center
 
+.. raw:: html
 
+   <div style="margin-top: 30px;"></div>
 .. note::
 
    - If the folder name of the downloaded code does not match the code file name, a prompt will appear asking if you want to "create a folder with the same name and move the file into it." Select **OK** to confirm.  
@@ -46,6 +48,9 @@ Select **Tools → Board → ESP32 → ESP32 Dev Module** in Arduino IDE.
    :width: 600
    :align: center
 
+.. raw:: html
+
+   <div style="margin-top: 30px;"></div>
 
 Select the Serial Port
 ~~~~~~~~~~~~~~~~~~~~~~
@@ -57,6 +62,9 @@ COMx should match the port of the connected ESP32 development board.
    :width: 600
    :align: center
 
+.. raw:: html
+
+   <div style="margin-top: 30px;"></div>
 
 Check Board and Port Selection
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -80,6 +88,10 @@ Upload Code
 .. image:: _static/39.upload.png
    :width: 600
    :align: center
+
+.. raw:: html
+
+   <div style="margin-top: 30px;"></div>
 
 2. The Output window will display the compilation and upload progress. The process may be slow, so please wait patiently until the code is successfully uploaded.  
 
