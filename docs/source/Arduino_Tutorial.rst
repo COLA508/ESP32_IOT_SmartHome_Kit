@@ -101,6 +101,11 @@ When you open Arduino IDE for the first time:
 
 ----
 
+.. _install_ch340_driver:
+
+Install CH340 Driver
+---------------------
+
 Install CH340 Driver
 ---------------------
 
