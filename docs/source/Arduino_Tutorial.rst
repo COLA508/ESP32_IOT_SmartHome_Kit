@@ -5,8 +5,8 @@ Arduino IDE Getting Started Tutorial
 
 ----
 
-Install the Arduino IDE
------------------------
+1.Install the Arduino IDE
+-------------------------
 
 This section will guide you through installing the **Arduino IDE** on Windows, macOS, and Linux systems.  
 
@@ -103,8 +103,8 @@ When you open Arduino IDE for the first time:
 
 .. _install_ch340_driver:
 
-Install CH340 Driver
----------------------
+2.Install CH340 Driver
+----------------------
 
 The ESP32 development board in this kit uses the **CH340C USB-to-serial chip**, so you must install the corresponding driver before using it.  
 
@@ -196,8 +196,8 @@ Checking Correct Driver Installation in Arduino IDE
 
 ----
 
-Install The ESP32 Core Board 
----------------------------------
+3.Install The ESP32 Core Board 
+-------------------------------
 
 Add Additional Boards Manager URL
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -277,8 +277,8 @@ Click **Tools → Board → esp32** to check whether an ESP32 development board 
 
 ----
 
-Add Libraries
--------------
+4.Add Libraries
+---------------
 
 - Arduino libraries can significantly simplify the development process.  
 - They encapsulate commonly used functions and hardware driver code, allowing users to simply call ready-made functions without writing complex low-level code from scratch.  
