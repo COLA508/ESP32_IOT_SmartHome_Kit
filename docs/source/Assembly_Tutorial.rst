@@ -28,7 +28,7 @@ Screw size comparison
 
 ----
 
-Installation of base part
+1.Installation of base part
 --------------------------
 
 Step 1: Install the ESP32 development board
@@ -97,7 +97,7 @@ The effect of the base installation is shown in the figure:
 
 ----
 
-Installation of the first floor
+2.Installation of the first floor
 -------------------------------
 
 Step 1: Install the button module
@@ -170,7 +170,7 @@ The effect of the first floor installation of the cabin is shown in the figure:
 
 ----
 
-Installation of the second floor
+3.nstallation of the second floor
 --------------------------------
 
 Step 1: Install window 
@@ -335,7 +335,7 @@ The effect picture of the second floor of the cabin after installation:
 
 ----
 
-Installation of  the garden
+4.Installation of  the garden
 ---------------------------
 
 Step 1: Install of the gate
@@ -506,7 +506,7 @@ The installation is shown in the following figure:
 
 ----
 
-Installation of the fixed part of the cabin
+5.Installation of the fixed part of the cabin
 --------------------------------------------
 
 Step 1: Attach the base
