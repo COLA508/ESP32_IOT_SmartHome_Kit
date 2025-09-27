@@ -36,17 +36,18 @@ LED (Light Emitting Diode) is a semiconductor device that can emit light. When a
      // Bright
      for (int duty = 0; duty <= 255; duty++) {
        ledcWrite(ledPin, duty);
-       delay(2);
+       delay(10);
      }
 
      // dark
      for (int duty = 255; duty >= 0; duty--) {
        ledcWrite(ledPin, duty);
-       delay(2);
+       delay(10);
      }
    }
 
 ----
+
 **Code burning options**
 
  - You can directly copy the code provided above into the Arduino IDE for burning.
@@ -319,8 +320,8 @@ Course 5：DHT11 Sensor-Temperature And Humidity Detection
 
 ----
 
-Course 6：RFID Module、SG90 Servo-Card access control system
-------------------------------------------------------
+Course 6：RFID Module+SG90 Servo-Card access control system
+-----------------------------------------------------------
 **Working principle:** 
 *RFID Module*
  - The RFID module generates a radio frequency electromagnetic field through its antenna. When a chip attached to an RFID card (or tag) enters the sensing area, the coil in the chip senses the electromagnetic field and draws energy.
@@ -330,9 +331,9 @@ Course 6：RFID Module、SG90 Servo-Card access control system
 *SG90 Servo*
  - The SG90 is a small PWM-controlled servo with a pulse-width modulated (PWM) input signal.
  - The control signal period is fixed at 20ms (50Hz):
-*Pulse width of approximately 0.5ms → servo rotates to 0°
-Pulse width of approximately 1.5ms → servo rotates to 90°
-Pulse width of approximately 2.5ms → servo rotates to 180°*
+ - Pulse width of approximately 0.5ms → servo rotates to 0°
+ - Pulse width of approximately 1.5ms → servo rotates to 90°
+ - Pulse width of approximately 2.5ms → servo rotates to 180°
  - Internally, it consists of a DC motor, a reduction gear, and a potentiometer for feedback. The potentiometer monitors the servo position in real time, and the circuit automatically adjusts the motor rotation to maintain the servo at the target angle.
 
 **wiring:** 
