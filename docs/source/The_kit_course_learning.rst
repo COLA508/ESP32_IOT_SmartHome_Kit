@@ -15,7 +15,9 @@ Course 1：LED Module-Breathing Light
 **Working principle:** 
 LED (Light Emitting Diode) is a semiconductor device that can emit light. When a forward voltage is applied, the LED conducts in a single direction and emits light. By controlling the high and low levels of the circuit it is connected to, it can be turned on or off.
 
-**wiring:** LED Module → ESP32 IO26
+**wiring:** 
+
+LED Module → ESP32 IO26
 
 **Sample Code:**
 
@@ -744,5 +746,142 @@ Course 8：Button Module+RGB Light Strip-Ambient Lighting
 .. image:: _static/2/8.rgb.png
    :width: 600
    :align: center
+
+----
+
+Course 9：Speech Recognition Module-Voice-Controlled Light
+----------------------------------------------------------
+**Working principle:** 
+
+*Speech Recognition Module*
+ - The module contains a microphone for collecting external sound signals.
+ - Sound signals are analog and need to be converted to digital signals using an analog-to-digital converter (ADC).
+ - The module processes the collected sound and extracts key speech features (such as syllables, frequency, and amplitude variations).
+ - Once a command is recognized, the module transmits the recognition result to a main control chip such as the ESP32 via a serial port signal. The ESP32 then performs the corresponding operation based on the received command.
+ - For example, in this sample code, the data sent "0x03" means turning on the light, and "0x04" means turning off the light.
+
+
+**wiring:** 
+
+ - Speech Recognition Module → ESP32 IO16、17
+ - LED Module → ESP32 IO26
+
+**Sample Code:**
+
+.. code-block:: cpp
+
+   #include <Arduino.h>
+
+   // LED configuration
+   #define LED_PIN 26
+
+   // Voice recognition
+   #define VOICE_RX_PIN 16
+   #define VOICE_TX_PIN 17
+   #define VOICE_HEADER 0xAA          // Packet header
+   #define VOICE_FOOTER 0xBB          // Packet footer
+   #define VOICE_PACKET_LENGTH 3      // Packet length
+   #define VOICE_KEY_LED_ON 0x03
+   #define VOICE_KEY_LED_OFF 0x04
+
+   HardwareSerial VoiceSerial(2);
+
+   // Voice protocol parsing variables
+   uint8_t voiceBuffer[VOICE_PACKET_LENGTH];
+   int voiceBufferIndex = 0;
+   bool voiceReceiving = false;
+   unsigned long lastVoiceByteTime = 0;
+   const unsigned long VOICE_TIMEOUT = 100; // Byte timeout in ms
+
+   void setLedValue(int val) {
+     digitalWrite(LED_PIN, val);
+   }
+
+   int getLedValue() {
+     return digitalRead(LED_PIN);
+   }
+
+   // Validate command
+   bool isValidVoiceCommand(uint8_t command) {
+     return (command == VOICE_KEY_LED_ON || command == VOICE_KEY_LED_OFF);
+   }
+
+   // Process voice command
+   void processVoiceCommand(uint8_t keyword) {
+     if (keyword == VOICE_KEY_LED_ON) {
+       setLedValue(HIGH);
+       Serial.println("Voice Command: LED ON");
+     } else if (keyword == VOICE_KEY_LED_OFF) {
+       setLedValue(LOW);
+       Serial.println("Voice Command: LED OFF");
+     }
+   }
+
+   // Voice protocol parser
+   void voiceSerialLoop() {
+     // Check timeout
+     if (voiceReceiving && millis() - lastVoiceByteTime > VOICE_TIMEOUT) {
+       voiceBufferIndex = 0;
+       voiceReceiving = false;
+     }
+     
+     while (VoiceSerial.available() > 0) {
+       uint8_t data = VoiceSerial.read();
+       lastVoiceByteTime = millis();
+       
+       if (!voiceReceiving) {
+         if (data == VOICE_HEADER) {
+           voiceReceiving = true;
+           voiceBufferIndex = 0;
+           voiceBuffer[voiceBufferIndex++] = data;
+         }
+         continue;
+       }
+       
+       if (voiceBufferIndex < VOICE_PACKET_LENGTH) {
+         voiceBuffer[voiceBufferIndex++] = data;
+         
+         if (voiceBufferIndex == VOICE_PACKET_LENGTH) {
+           if (voiceBuffer[0] == VOICE_HEADER && voiceBuffer[2] == VOICE_FOOTER) {
+             uint8_t keyword = voiceBuffer[1];
+             if (isValidVoiceCommand(keyword)) {
+               processVoiceCommand(keyword);
+             } else {
+               Serial.print("Invalid command: 0x");
+               Serial.println(keyword, HEX);
+             }
+           }
+           voiceReceiving = false;
+           voiceBufferIndex = 0;
+         }
+       } else {
+         voiceReceiving = false;
+         voiceBufferIndex = 0;
+       }
+     }
+   }
+
+   void setup() {
+     Serial.begin(115200);
+     VoiceSerial.begin(115200, SERIAL_8N1, VOICE_TX_PIN, VOICE_RX_PIN);
+     pinMode(LED_PIN, OUTPUT);
+     setLedValue(LOW);
+     Serial.println("Voice-controlled LED system started");
+   }
+
+   void loop() {
+     voiceSerialLoop();  // Handle voice commands
+   }
+
+----
+
+**Code burning options**
+
+ - You can directly copy the code provided above into the Arduino IDE for burning.
+ - Find the **9.Voicelight.ino** file in the provided folder, download it, open it with the Arduino IDE, and burn the program to the ESP32 development board.
+ - Alternatively, you can click this link to download the BIN firmware file we have prepared in advance and then burn the program into the ESP32 development board using Espressif's official burning tool. `9.Voicelight <https://www.dropbox.com/scl/fi/j6oue7pij59qyy9cwqclh/CH34x_Install_Windows_v3_4.zip?rlkey=xttzwik1qp56naxw8v7ostmkq&e=1&st=kcy0xjl1&dl=0>`_ 
+
+**Effect display:**
+ - When you say **Turn on the ligh** or **Turn on the light** to the voice recognition module, the LED light module will turn on or off.
 
 ----
