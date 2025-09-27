@@ -109,6 +109,15 @@ The surrounding brightness data will be output every 3 seconds on the **serial m
    :width: 600
    :align: center
 
+.. note::
+
+   - If you see garbled or abnormal display in the **serial monitor**, please check and confirm that the baud rate is set to **115200 baud**. 
+   - All sample codes provided by this kit use the baud rate of **115200 baud** by default.
+   
+   .. image:: _static/2/6.baud.png
+      :width: 600
+      :align: center
+
 ----
 
 Course 3：PIR Sensor-Human Body Detection
@@ -226,3 +235,83 @@ Course 4：Raindrop Sensor-Raindrop Detection
 
 ----
 
+**Code burning options**
+
+ - You can directly copy the code provided above into the Arduino IDE for burning.
+ - Find the **4.RaindropDetection.ino** file in the provided folder, download it, open it with the Arduino IDE, and burn the program to the ESP32 development board.
+ - Alternatively, you can click this link to download the BIN firmware file we have prepared in advance and then burn the program into the ESP32 development board using Espressif's official burning tool. `4.RaindropDetection <https://www.dropbox.com/scl/fi/j6oue7pij59qyy9cwqclh/CH34x_Install_Windows_v3_4.zip?rlkey=xttzwik1qp56naxw8v7ostmkq&e=1&st=kcy0xjl1&dl=0>`_  
+
+**Effect display:**
+
+ - When the electrodes of the raindrop sensor detect rain, the **serial monitor** will output "Rain Detected!"
+
+.. image:: _static/2/4.Rain.png
+   :width: 600
+   :align: center
+
+----
+
+Course 5：DHT11 Sensor-Temperature and humidity detection
+------------------------------------------------------
+**Working principle:** 
+ - Temperature Sensing: An integrated NTC thermistor measures the ambient temperature by measuring the change in resistance with temperature.
+ - Humidity Sensing: A capacitive humidity sensor is used. The dielectric constant of the capacitor changes with air humidity, thus providing relative humidity.
+ - Signal Processing: An internal 8-bit microcontroller converts the analog temperature and humidity signals into digital signals, which are then transmitted to the main control unit via a single-wire bus protocol.
+
+**wiring:** DHT11 Sensor → ESP32 IO15
+
+
+**Sample Code:**
+
+.. code-block:: cpp
+
+   #include "DHT.h"
+
+   // Define pin and sensor type
+   #define DHTPIN 15         // DHT11 data pin connected to ESP32 GPIO15
+   #define DHTTYPE DHT11     // Using DHT11 sensor
+
+   DHT dht(DHTPIN, DHTTYPE); // Create DHT object
+
+   void setup() {
+       Serial.begin(115200);   // Initialize serial communication
+       dht.begin();            // Initialize DHT11 sensor
+       Serial.println("DHT11 Temperature and Humidity Sensor Test Started");
+   }
+
+   void loop() {
+       delay(2000); // Read every 2 seconds
+
+       float humidity = dht.readHumidity();       // Read humidity
+       float temperature = dht.readTemperature(); // Read temperature (default Celsius)
+
+       // Check if reading is successful
+       if (isnan(humidity) || isnan(temperature)) {
+           Serial.println("Failed to read from DHT11 sensor!");
+           return;
+       }
+
+       // Output data to serial monitor
+       Serial.print("Temperature: ");
+       Serial.print(temperature);
+       Serial.print(" °C  | Humidity: ");
+       Serial.print(humidity);
+       Serial.println(" %");
+   }
+
+----
+
+**Code burning options**
+
+ - You can directly copy the code provided above into the Arduino IDE for burning.
+ - Find the **5.TEMHUM.ino** file in the provided folder, download it, open it with the Arduino IDE, and burn the program to the ESP32 development board.
+ - Alternatively, you can click this link to download the BIN firmware file we have prepared in advance and then burn the program into the ESP32 development board using Espressif's official burning tool. `5.TEMHUM <https://www.dropbox.com/scl/fi/j6oue7pij59qyy9cwqclh/CH34x_Install_Windows_v3_4.zip?rlkey=xttzwik1qp56naxw8v7ostmkq&e=1&st=kcy0xjl1&dl=0>`_ 
+
+**Effect display:**
+ - The **serial monitor** will output the temperature and humidity of the surrounding environment.
+
+.. image:: _static/2/5.dht11.png
+   :width: 600
+   :align: center
+
+----
