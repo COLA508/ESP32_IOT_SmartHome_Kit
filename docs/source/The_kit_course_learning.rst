@@ -134,7 +134,9 @@ Course 3：PIR Sensor-Human Body Detection
  - The sensor's internal circuitry amplifies the signal and reshapes it into digital high and low levels. 
  - High indicates a person is present. Low indicates no person is present.
 
-**wiring:** PIR Sensor → ESP32 IO33
+**wiring:** 
+
+ - PIR Sensor → ESP32 IO33
 
 **Sample Code:**
 
@@ -200,7 +202,9 @@ Course 4：Raindrop Sensor-Raindrop Detection
  - Digital signal: HIGH indicates a water droplet is detected, LOW indicates no water droplets.
  - Analog signal: The voltage value changes with the amount of water droplets.
 
-**wiring:** Raindrop Sensor → ESP32 IO35
+**wiring:** 
+
+ - Raindrop Sensor → ESP32 IO35
 
 **Sample Code:**
 
@@ -269,7 +273,7 @@ Course 5：DHT11 Sensor+Fan Module-Temperature controlled fan
  - Current flows through the motor coil, generating a magnetic field that rotates the motor and the blades.
  - When the signal is off, the circuit is de-energized, and the fan stops.
 
-**wiring:** .
+**wiring:** 
  - DHT11 Sensor → ESP32 IO15
  - FAN Module → ESP32 IO27
 
@@ -347,7 +351,120 @@ Course 5：DHT11 Sensor+Fan Module-Temperature controlled fan
 
 ----
 
-Course 6：RFID Module+SG90 Servo-Card access control system
+Course 6：LCD1602 Screen-Environmental Status Display
+-----------------------------------------------------
+**Working principle:** 
+
+*LCD1602 Screen*
+ - LCD1602 is a character liquid crystal display that can display 2 rows*16 columns of characters. The display or non-display of pixels is controlled by voltage signals.
+
+**wiring:** 
+
+ - LCD1602 Screen → ESP32 I2C
+ - DHT11 Sensor → ESP32 IO15
+ - PIR Sensor → ESP32 IO33
+ - Raindrop Sensor → ESP32 IO35
+
+
+**Sample Code:**
+
+.. code-block:: cpp
+
+   #include <Wire.h>
+   #include <LiquidCrystal_I2C.h>
+   #include <DHT.h>
+
+   // ====== DHT11 Sensor ======
+   #define DHTPIN 15
+   #define DHTTYPE DHT11
+   DHT dht(DHTPIN, DHTTYPE);
+
+   // ====== Rain and Light Sensors ======
+   #define RAIN_PIN 35  // Rain sensor analog pin
+   #define LIGHT_PIN 34 // Light sensor analog pin
+
+   // ====== LCD ======
+   #define LCD_ADDR 0x27 // I2C address of LCD1602, change if needed
+   LiquidCrystal_I2C lcd(LCD_ADDR, 16, 2);
+
+   // ====== Helper function to map analog to 0-100 ======
+   int normalizeValue(int value, int minVal = 0, int maxVal = 4095) {
+       int normalized = map(value, minVal, maxVal, 0, 100);
+       if (normalized < 0) normalized = 0;
+       if (normalized > 100) normalized = 100;
+       return normalized;
+   }
+
+   void setup() {
+       Serial.begin(115200);
+       
+       // Initialize DHT11
+       dht.begin();
+       
+       // Initialize LCD
+       lcd.init();
+       lcd.backlight();
+       lcd.clear();
+       lcd.setCursor(0, 0);
+       lcd.print("Initializing...");
+       
+       delay(2000);
+   }
+
+   void loop() {
+       // ====== Read Sensors ======
+       float temp = dht.readTemperature();  // Celsius
+       float humi = dht.readHumidity();
+
+       int rainRaw = analogRead(RAIN_PIN);  // 0-4095
+       int lightRaw = analogRead(LIGHT_PIN);
+
+       // Normalize rain and light to 0-100
+       int rainValue = normalizeValue(rainRaw);
+       int lightValue = normalizeValue(lightRaw);
+
+       // ====== Serial Output ======
+       Serial.print("Temp: "); Serial.print(temp); Serial.print(" C  ");
+       Serial.print("Humi: "); Serial.print(humi); Serial.print(" %  ");
+       Serial.print("Rain: "); Serial.print(rainValue); Serial.print("  ");
+       Serial.print("Light: "); Serial.println(lightValue);
+
+       // ====== LCD Display ======
+       lcd.clear();  // Clear previous content
+
+       // First row: Temperature and Humidity
+       lcd.setCursor(0, 0);
+       lcd.print("TEMP:");
+       if (!isnan(temp)) lcd.print((int)temp); else lcd.print("--");
+       lcd.print(" HUMI:");
+       if (!isnan(humi)) lcd.print((int)humi); else lcd.print("--");
+
+       // Second row: Rain and Light
+       lcd.setCursor(0, 1);
+       lcd.print("RAIN:");
+       lcd.print(rainValue);
+       lcd.print("  LIGHT:");
+       lcd.print(lightValue);
+
+       delay(3000); // Update every 3 seconds
+   }
+
+----
+
+**Code burning options**
+
+ - You can directly copy the code provided above into the Arduino IDE for burning.
+ - Find the **6.EnvironmentalDisplay.ino** file in the provided folder, download it, open it with the Arduino IDE, and burn the program to the ESP32 development board.
+ - Alternatively, you can click this link to download the BIN firmware file we have prepared in advance and then burn the program into the ESP32 development board using Espressif's official burning tool. `6.EnvironmentalDisplay <https://www.dropbox.com/scl/fi/j6oue7pij59qyy9cwqclh/CH34x_Install_Windows_v3_4.zip?rlkey=xttzwik1qp56naxw8v7ostmkq&e=1&st=kcy0xjl1&dl=0>`_
+
+
+**Effect display:**
+
+ - The LCD1602 screen will display two lines of information. The first line displays the temperature and humidity values, and the second line displays the raindrop value and brightness value.
+
+----
+
+Course 7：RFID Module+SG90 Servo-Card access control system
 -----------------------------------------------------------
 **Working principle:** 
 
