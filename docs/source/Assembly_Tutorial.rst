@@ -24,7 +24,7 @@ Screw size comparison
    :alt: Screw comparison
    :align: center
 
-*Now, please follow the steps in this tutorial and let’s start installing the "LA-Smart-Home" smart home cabin.*
+*Now, please follow the steps in this tutorial and let’s start installing the "Smart-Home".*
 
 ----
 
