@@ -145,7 +145,7 @@ Download burning tools
 ~~~~~~~~~~~~~~~~~~~
 
 1. Click this link to enter Espressif's official burning tool download page.  
-   `Espressif Burning Tool <https://www.arduino.cc/en/software/>`_
+   `Espressif Burning Tool <https://www.espressif.com.cn/zh-hans/support/download/other-tools>`_
 
 .. image:: _static/42.TOOL.png
    :width: 600
