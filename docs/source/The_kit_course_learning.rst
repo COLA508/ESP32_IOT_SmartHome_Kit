@@ -255,52 +255,79 @@ Course 4：Raindrop Sensor-Raindrop Detection
 
 ----
 
-Course 5：DHT11 Sensor-Temperature And Humidity Detection
-------------------------------------------------------
+Course 5：DHT11 Sensor+Fan Module-Temperature controlled fan
+------------------------------------------------------------
 **Working principle:** 
+
+*DHT11 Sensor*
  - Temperature Sensing: An integrated NTC thermistor measures the ambient temperature by measuring the change in resistance with temperature.
  - Humidity Sensing: A capacitive humidity sensor is used. The dielectric constant of the capacitor changes with air humidity, thus providing relative humidity.
  - Signal Processing: An internal 8-bit microcontroller converts the analog temperature and humidity signals into digital signals, which are then transmitted to the main control unit via a single-wire bus protocol.
 
-**wiring:** DHT11 Sensor → ESP32 IO15
+*FAN Module*
+ - The core is a DC motor. When the signal (S) is high, the fan is powered on.
+ - Current flows through the motor coil, generating a magnetic field that rotates the motor and the blades.
+ - When the signal is off, the circuit is de-energized, and the fan stops.
 
+**wiring:** .
+ - DHT11 Sensor → ESP32 IO15
+ - FAN Module → ESP32 IO27
 
 **Sample Code:**
 
 .. code-block:: cpp
 
-   #include "DHT.h"
+   #include <DHT.h>
 
-   // Define pin and sensor type
-   #define DHTPIN 15         // DHT11 data pin connected to ESP32 GPIO15
-   #define DHTTYPE DHT11     // Using DHT11 sensor
+   #define DHTPIN 15       // DHT11 signal pin connected to ESP32 GPIO15
+   #define DHTTYPE DHT11   // Define sensor type as DHT11
 
-   DHT dht(DHTPIN, DHTTYPE); // Create DHT object
+   #define FAN_PIN 27      // Fan signal pin connected to ESP32 GPIO27
+   #define TEMP_THRESHOLD 30  // Temperature threshold to turn on fan
+
+   DHT dht(DHTPIN, DHTTYPE);
 
    void setup() {
-       Serial.begin(115200);   // Initialize serial communication
-       dht.begin();            // Initialize DHT11 sensor
-       Serial.println("DHT11 Temperature and Humidity Sensor Test Started");
+       Serial.begin(115200);
+       dht.begin();
+
+       pinMode(FAN_PIN, OUTPUT);
+       digitalWrite(FAN_PIN, LOW); // Fan initially OFF
+
+       Serial.println("DHT11 Sensor + Fan Control Example");
    }
 
    void loop() {
-       delay(2000); // Read every 2 seconds
+       // Read temperature and humidity
+       float h = dht.readHumidity();
+       float t = dht.readTemperature();
 
-       float humidity = dht.readHumidity();       // Read humidity
-       float temperature = dht.readTemperature(); // Read temperature (default Celsius)
-
-       // Check if reading is successful
-       if (isnan(humidity) || isnan(temperature)) {
+       // Check if reading failed
+       if (isnan(h) || isnan(t)) {
            Serial.println("Failed to read from DHT11 sensor!");
+           delay(3000);
            return;
        }
 
-       // Output data to serial monitor
-       Serial.print("Temperature: ");
-       Serial.print(temperature);
-       Serial.print(" °C  | Humidity: ");
-       Serial.print(humidity);
-       Serial.println(" %");
+       // Print sensor data
+       Serial.print("Humidity: ");
+       Serial.print(h);
+       Serial.print(" %  |  Temperature: ");
+       Serial.print(t);
+       Serial.println(" °C");
+
+       // Control fan based on temperature
+       if (t >= TEMP_THRESHOLD) {
+           digitalWrite(FAN_PIN, HIGH);  // Turn ON fan
+           Serial.println("Temperature >= 30°C → Fan ON");
+       } else {
+           digitalWrite(FAN_PIN, LOW);   // Turn OFF fan
+           Serial.println("Temperature < 30°C → Fan OFF");
+       }
+
+       Serial.println("-----------------------------");
+
+       delay(3000);  // Wait 3 seconds before next reading
    }
 
 ----
@@ -308,13 +335,13 @@ Course 5：DHT11 Sensor-Temperature And Humidity Detection
 **Code burning options**
 
  - You can directly copy the code provided above into the Arduino IDE for burning.
- - Find the **5.TEMHUM.ino** file in the provided folder, download it, open it with the Arduino IDE, and burn the program to the ESP32 development board.
- - Alternatively, you can click this link to download the BIN firmware file we have prepared in advance and then burn the program into the ESP32 development board using Espressif's official burning tool. `5.TEMHUM <https://www.dropbox.com/scl/fi/j6oue7pij59qyy9cwqclh/CH34x_Install_Windows_v3_4.zip?rlkey=xttzwik1qp56naxw8v7ostmkq&e=1&st=kcy0xjl1&dl=0>`_ 
+ - Find the **5.DHT11FAN.ino** file in the provided folder, download it, open it with the Arduino IDE, and burn the program to the ESP32 development board.
+ - Alternatively, you can click this link to download the BIN firmware file we have prepared in advance and then burn the program into the ESP32 development board using Espressif's official burning tool. `5.DHT11FAN <https://www.dropbox.com/scl/fi/j6oue7pij59qyy9cwqclh/CH34x_Install_Windows_v3_4.zip?rlkey=xttzwik1qp56naxw8v7ostmkq&e=1&st=kcy0xjl1&dl=0>`_ 
 
 **Effect display:**
- - The **serial monitor** will output the temperature and humidity of the surrounding environment.
+ - The **serial monitor** outputs the ambient temperature and humidity every 3 seconds. When the temperature reaches 30 degrees, the fan will start to rotate.
 
-.. image:: _static/2/5.dht11.png
+.. image:: _static/2/5.dhttfan.png
    :width: 600
    :align: center
 
@@ -323,6 +350,7 @@ Course 5：DHT11 Sensor-Temperature And Humidity Detection
 Course 6：RFID Module+SG90 Servo-Card access control system
 -----------------------------------------------------------
 **Working principle:** 
+
 *RFID Module*
  - The RFID module generates a radio frequency electromagnetic field through its antenna. When a chip attached to an RFID card (or tag) enters the sensing area, the coil in the chip senses the electromagnetic field and draws energy.
  - The card chip uses modulation and demodulation techniques to transmit its stored unique ID data to the RFID module.
