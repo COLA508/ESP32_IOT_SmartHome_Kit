@@ -108,7 +108,7 @@ The surrounding brightness data will be output every 3 seconds on the **serial m
 .. image:: _static/2/2.light.png
    :width: 600
    :align: center
-   
+
 .. raw:: html
 
    <div style="margin-top: 30px;"></div>
@@ -254,7 +254,7 @@ Course 4：Raindrop Sensor-Raindrop Detection
 
 ----
 
-Course 5：DHT11 Sensor-Temperature and humidity detection
+Course 5：DHT11 Sensor-Temperature And Humidity Detection
 ------------------------------------------------------
 **Working principle:** 
  - Temperature Sensing: An integrated NTC thermistor measures the ambient temperature by measuring the change in resistance with temperature.
@@ -318,3 +318,101 @@ Course 5：DHT11 Sensor-Temperature and humidity detection
    :align: center
 
 ----
+
+Course 6：RFID Module、SG90 Servo-Card access control system
+------------------------------------------------------
+**Working principle:** 
+*RFID Module*
+ - The RFID module generates a radio frequency electromagnetic field through its antenna. When a chip attached to an RFID card (or tag) enters the sensing area, the coil in the chip senses the electromagnetic field and draws energy.
+ - The card chip uses modulation and demodulation techniques to transmit its stored unique ID data to the RFID module.
+ - The RFID module then transmits this data to the microcontroller via the I²C interface.
+
+*SG90 Servo*
+ - The SG90 is a small PWM-controlled servo with a pulse-width modulated (PWM) input signal.
+ - The control signal period is fixed at 20ms (50Hz):
+*Pulse width of approximately 0.5ms → servo rotates to 0°
+Pulse width of approximately 1.5ms → servo rotates to 90°
+Pulse width of approximately 2.5ms → servo rotates to 180°*
+ - Internally, it consists of a DC motor, a reduction gear, and a potentiometer for feedback. The potentiometer monitors the servo position in real time, and the circuit automatically adjusts the motor rotation to maintain the servo at the target angle.
+
+**wiring:** 
+ - RFID Module → ESP32 I2C
+ - SG90 Servo  → ESP32 IO13（servo2）
+
+**Sample Code:**
+
+.. code-block:: cpp
+
+   #include <Wire.h>
+   #include <MFRC522_I2C.h>
+   #include <ESP32Servo.h>
+
+   #define RC522_ADDR 0x28      // I2C address (need to confirm)
+   #define I2C_SDA 21
+   #define I2C_SCL 22
+
+   #define SERVO_PIN 13         // Servo signal pin connected to ESP32 GPIO13
+   #define OPEN_ANGLE 90        // Servo angle for door open
+   #define CLOSE_ANGLE 0        // Servo angle for door close
+   #define OPEN_TIME 3000       // Door open duration (milliseconds)
+
+   MFRC522_I2C mfrc522(RC522_ADDR, 0xFF);  
+   Servo doorServo;
+
+   void setup() {
+       Serial.begin(115200);
+       Wire.begin(I2C_SDA, I2C_SCL);
+       mfrc522.PCD_Init();  // Initialize RC522
+       Serial.println("Initialization complete, waiting for card...");
+
+       doorServo.setPeriodHertz(50);              // Set to standard servo frequency
+       doorServo.attach(SERVO_PIN, 500, 2400);    // Limit pulse width range to avoid jitter
+       doorServo.write(CLOSE_ANGLE);              // Initial state: door closed
+   }
+
+   void loop() {
+       if (!mfrc522.PICC_IsNewCardPresent() || !mfrc522.PICC_ReadCardSerial()) {
+           delay(100);
+           return;
+       }
+
+       Serial.print("Card UID: ");
+       for (byte i = 0; i < mfrc522.uid.size; i++) {
+           if (mfrc522.uid.uidByte[i] < 0x10) Serial.print("0");
+           Serial.print(mfrc522.uid.uidByte[i], HEX);
+           Serial.print(" ");
+       }
+       Serial.println();
+
+       // === Door open action ===
+       Serial.println("✅ Card detected, opening door...");
+       openDoor();
+
+       mfrc522.PICC_HaltA();
+       mfrc522.PCD_StopCrypto1();
+       delay(1000);  // Prevent reading the same card too quickly
+   }
+
+   void openDoor() {
+       doorServo.write(OPEN_ANGLE);
+       delay(OPEN_TIME);
+       doorServo.write(CLOSE_ANGLE);
+   }
+
+----
+
+**Code burning options**
+
+ - You can directly copy the code provided above into the Arduino IDE for burning.
+ - Find the **6.RFIDDOOR.ino** file in the provided folder, download it, open it with the Arduino IDE, and burn the program to the ESP32 development board.
+ - Alternatively, you can click this link to download the BIN firmware file we have prepared in advance and then burn the program into the ESP32 development board using Espressif's official burning tool. `6.RFIDDOOR <https://www.dropbox.com/scl/fi/j6oue7pij59qyy9cwqclh/CH34x_Install_Windows_v3_4.zip?rlkey=xttzwik1qp56naxw8v7ostmkq&e=1&st=kcy0xjl1&dl=0>`_ 
+
+**Effect display:**
+ - When the ID card is close to the RFID module, the servo will rotate to simulate the door opening action. At the same time, the serial monitor will display the read card number and prompt "Door opened successfully".
+
+.. image:: _static/2/7.rfid.png
+   :width: 600
+   :align: center
+
+----
+
