@@ -736,6 +736,7 @@ Course 8：Button Module+RGB Light Strip-Ambient Lighting
  - Alternatively, you can click this link to download the BIN firmware file we have prepared in advance and then burn the program into the ESP32 development board using Espressif's official burning tool. `8.RGBLIGHT <https://www.dropbox.com/scl/fi/j6oue7pij59qyy9cwqclh/CH34x_Install_Windows_v3_4.zip?rlkey=xttzwik1qp56naxw8v7ostmkq&e=1&st=kcy0xjl1&dl=0>`_ 
 
  **Effect display:**
+ 
  - Pressing the button toggles between four RGB effects: Rainbow, Fire, Lightning, and Starry Night.
  - Pressing the button again turns off the RGB light strip.
  - The serial monitor will display the current mode or a shutdown prompt.
