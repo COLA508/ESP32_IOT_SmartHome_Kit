@@ -108,6 +108,10 @@ The surrounding brightness data will be output every 3 seconds on the **serial m
 .. image:: _static/2/2.light.png
    :width: 600
    :align: center
+   
+.. raw:: html
+
+   <div style="margin-top: 30px;"></div>
 
 .. note::
 
@@ -242,7 +246,6 @@ Course 4：Raindrop Sensor-Raindrop Detection
  - Alternatively, you can click this link to download the BIN firmware file we have prepared in advance and then burn the program into the ESP32 development board using Espressif's official burning tool. `4.RaindropDetection <https://www.dropbox.com/scl/fi/j6oue7pij59qyy9cwqclh/CH34x_Install_Windows_v3_4.zip?rlkey=xttzwik1qp56naxw8v7ostmkq&e=1&st=kcy0xjl1&dl=0>`_  
 
 **Effect display:**
-
  - When the electrodes of the raindrop sensor detect rain, the **serial monitor** will output "Rain Detected!"
 
 .. image:: _static/2/4.Rain.png
