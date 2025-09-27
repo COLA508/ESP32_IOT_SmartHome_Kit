@@ -562,3 +562,186 @@ Course 7：RFID Module+SG90 Servo-Card access control system
 
 ----
 
+Course 8：Button Module+RGB Light Strip-Ambient Lighting
+--------------------------------------------------------
+**Working principle:** 
+
+*Button Module*
+ - When a key is not pressed, the S terminal is normally connected to a high level （through a pull-up resistor or internal pull-up）, and the digital reading is HIGH.
+ - When a key is pressed, the S terminal is connected to GND, and the digital reading is LOW.
+ - The ESP32 detects whether a key is "pressed" or "released" by reading the level change on the S terminal.
+
+*RGB Light Strip*
+ - Each LED consists of three small lights （red, green, and blue）, whose brightness can be adjusted to create various colors.
+ - The ESP32 sends control data via a single digital signal （with strict timing, typically using a specialized library such as Adafruit_NeoPixel）.
+ - The data format is the RGB brightness value of each LED, which is transmitted to each LED in sequence. After the first LED receives its data, it forwards the subsequent data to the next LED.
+ - By continuously refreshing the data, dynamic effects such as color gradients, blinking, and flowing can be achieved.
+
+**wiring:** 
+ - Button Module → ESP32 IO32
+ - RGB Light Strip  → ESP32 IO5
+
+**Sample Code:**
+
+.. code-block:: cpp
+
+   #include <Arduino.h>
+   #include <Adafruit_NeoPixel.h>
+
+   // RGB LED strip configuration
+   #define WS2812_PIN 5       // RGB LED data pin
+   #define WS2812_NUM 8       // Number of LEDs
+
+   // Button configuration
+   #define BUTTON_PIN 32
+
+   // RGB control variables
+   Adafruit_NeoPixel pixels(WS2812_NUM, WS2812_PIN, NEO_GRB + NEO_KHZ800);
+   int oldButtonLevel = HIGH;   // Previous button state
+   bool rgbAutoMode = false;    // Whether RGB effect is active
+   int colorMode = 0;           // 0=Rainbow, 1=Fire, 2=Lightning, 3=Starry
+
+   // Timing for RGB effect
+   unsigned long lastColorChange = 0;
+   int colorSpeed = 30;  // Speed in ms
+   int hue = 0;
+
+   void setup() {
+       Serial.begin(115200);
+       pinMode(BUTTON_PIN, INPUT_PULLUP); // Configure button as input with pullup
+       pixels.begin();                     // Initialize RGB strip
+       pixels.show();                      // Turn off all LEDs initially
+       Serial.println("RGB Button Control Ready");
+   }
+
+   // Simple rainbow effect
+   void rainbowEffect() {
+       hue += 8;
+       if (hue >= 65536) hue = 0;
+
+       for (int i = 0; i < WS2812_NUM; i++) {
+           int pixelHue = hue + (i * 65536L / WS2812_NUM);
+           pixels.setPixelColor(i, pixels.gamma32(pixels.ColorHSV(pixelHue)));
+       }
+       pixels.show();
+   }
+
+   // Fire effect
+   void fireEffect() {
+       for (int i = 0; i < WS2812_NUM; i++) {
+           int flicker = random(0, 150);
+           int r = 255;
+           int g = random(50, 150);
+           int b = random(0, 50);
+           pixels.setPixelColor(i, pixels.Color(r - flicker, g - flicker, b));
+       }
+       pixels.show();
+   }
+
+   // Lightning effect
+   void lightningEffect() {
+       if (random(0, 100) > 95) {
+           int flashes = random(1, 4);
+           for (int f = 0; f < flashes; f++) {
+               for (int i = 0; i < WS2812_NUM; i++) pixels.setPixelColor(i, pixels.Color(255, 255, 255));
+               pixels.show();
+               delay(random(10, 50));
+               for (int i = 0; i < WS2812_NUM; i++) pixels.setPixelColor(i, pixels.Color(0, 0, 0));
+               pixels.show();
+               delay(random(5, 30));
+           }
+       }
+       // Slight glow background
+       for (int i = 0; i < WS2812_NUM; i++) {
+           int glow = random(0, 30);
+           pixels.setPixelColor(i, pixels.Color(glow, glow, glow + random(0, 20)));
+       }
+       pixels.show();
+   }
+
+   // Starry night effect
+   void starryNightEffect() {
+       pixels.clear();
+       for (int i = 0; i < random(2, 5); i++) {
+           int pos = random(WS2812_NUM);
+           int brightness = random(100, 255);
+           int color = random(0, 3);
+           switch(color) {
+               case 0: pixels.setPixelColor(pos, pixels.Color(brightness, 0, 0)); break;
+               case 1: pixels.setPixelColor(pos, pixels.Color(0, brightness, 0)); break;
+               case 2: pixels.setPixelColor(pos, pixels.Color(0, 0, brightness)); break;
+           }
+       }
+       pixels.show();
+   }
+
+   // Update RGB effects based on current mode
+   void updateRGBEffects() {
+       unsigned long currentMillis = millis();
+       if (currentMillis - lastColorChange >= colorSpeed) {
+           lastColorChange = currentMillis;
+           switch(colorMode) {
+               case 0: rainbowEffect(); break;
+               case 1: fireEffect(); break;
+               case 2: lightningEffect(); break;
+               case 3: starryNightEffect(); break;
+           }
+       }
+   }
+
+   // Handle button press to switch RGB modes
+   void buttonPressLoop() {
+       int buttonLevel = digitalRead(BUTTON_PIN);
+       
+       // Detect button press (falling edge)
+       if (buttonLevel == LOW && oldButtonLevel == HIGH) {
+           if (!rgbAutoMode) {
+               colorMode = (colorMode + 1) % 4; // Cycle through 4 effects
+               rgbAutoMode = true;
+               Serial.print("RGB Mode Activated: ");
+               switch(colorMode) {
+                   case 0: Serial.println("Rainbow"); break;
+                   case 1: Serial.println("Fire"); break;
+                   case 2: Serial.println("Lightning"); break;
+                   case 3: Serial.println("Starry Night"); break;
+               }
+           } else {
+               rgbAutoMode = false;
+               pixels.clear();
+               pixels.show();
+               Serial.println("RGB Mode Deactivated");
+           }
+           delay(200); // Debounce delay
+       }
+       
+       oldButtonLevel = buttonLevel;
+   }
+
+   void loop() {
+       buttonPressLoop();
+       
+       if (rgbAutoMode) {
+           updateRGBEffects();
+       }
+       
+       delay(10);
+   }
+
+----
+
+**Code burning options**
+
+ - You can directly copy the code provided above into the Arduino IDE for burning.
+ - Find the **8.RGBLIGHT.ino** file in the provided folder, download it, open it with the Arduino IDE, and burn the program to the ESP32 development board.
+ - Alternatively, you can click this link to download the BIN firmware file we have prepared in advance and then burn the program into the ESP32 development board using Espressif's official burning tool. `8.RGBLIGHT <https://www.dropbox.com/scl/fi/j6oue7pij59qyy9cwqclh/CH34x_Install_Windows_v3_4.zip?rlkey=xttzwik1qp56naxw8v7ostmkq&e=1&st=kcy0xjl1&dl=0>`_ 
+
+ **Effect display:**
+ - Pressing the button toggles between four RGB effects: Rainbow, Fire, Lightning, and Starry Night.
+ - Pressing the button again turns off the RGB light strip.
+ - The serial monitor will display the current mode or a shutdown prompt.
+
+.. image:: _static/2/8.RGB.png
+   :width: 600
+   :align: center
+
+----
