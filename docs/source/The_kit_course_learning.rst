@@ -740,7 +740,7 @@ Course 8：Button Module+RGB Light Strip-Ambient Lighting
  - Pressing the button again turns off the RGB light strip.
  - The serial monitor will display the current mode or a shutdown prompt.
 
-.. image:: _static/2/8.RGB.png
+.. image:: _static/2/8.rgb.png
    :width: 600
    :align: center
 
