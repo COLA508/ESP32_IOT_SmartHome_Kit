@@ -13,11 +13,12 @@ Course 1：LED Module-Breathing Light
 -----------------------------------
 
 **Working principle:** 
-LED (Light Emitting Diode) is a semiconductor device that can emit light. When a forward voltage is applied, the LED conducts in a single direction and emits light. By controlling the high and low levels of the circuit it is connected to, it can be turned on or off.
+
+ - LED (Light Emitting Diode) is a semiconductor device that can emit light. When a forward voltage is applied, the LED conducts in a single direction and emits light. By controlling the high and low levels of the circuit it is connected to, it can be turned on or off.
 
 **wiring:** 
 
-LED Module → ESP32 IO26
+ - LED Module → ESP32 IO26
 
 **Sample Code:**
 
@@ -67,9 +68,12 @@ Course 2：Light Sensor-Brightness Detection
 ----------------------
 
 **Working principle:** 
-Light intensity affects the resistance or current of the sensor element. After internal voltage division, an analog voltage output is generated. The ESP32 reads the voltage value through the ADC and can calculate the current ambient brightness.
 
-**wiring:** Light Sensor → ESP32 IO34
+ - Light intensity affects the resistance or current of the sensor element. After internal voltage division, an analog voltage output is generated. The ESP32 reads the voltage value through the ADC and can calculate the current ambient brightness.
+
+**wiring:** 
+
+ - Light Sensor → ESP32 IO34
 
 **Sample Code:**
 
@@ -106,7 +110,8 @@ Light intensity affects the resistance or current of the sensor element. After i
  - Alternatively, you can click this link to download the BIN firmware file we have prepared in advance and then burn the program into the ESP32 development board using Espressif's official burning tool. `2.BrightnessDetection <https://www.dropbox.com/scl/fi/j6oue7pij59qyy9cwqclh/CH34x_Install_Windows_v3_4.zip?rlkey=xttzwik1qp56naxw8v7ostmkq&e=1&st=kcy0xjl1&dl=0>`_  
 
 **Effect display:**
-The surrounding brightness data will be output every 3 seconds on the **serial monito**
+
+ - The surrounding brightness data will be output every 3 seconds on the **serial monito**
 
 .. image:: _static/2/2.light.png
    :width: 600
@@ -131,6 +136,7 @@ Course 3：PIR Sensor-Human Body Detection
 ----------------------------------------
 
 **Working principle:** 
+
  - Pyroelectric chips sense infrared heat radiated by the human body. 
  - When a person moves into the sensing area, the temperature on both sides of the chip changes, generating a charge change that outputs a voltage signal. 
  - The sensor's internal circuitry amplifies the signal and reshapes it into digital high and low levels. 
@@ -187,6 +193,7 @@ Course 3：PIR Sensor-Human Body Detection
 
 
 **Effect display:**
+
  - When the PIR sensor detects human movement, the blue indicator light will turn on.
  - The **serial monitor** will output whether a human body is detected.
 
@@ -200,6 +207,7 @@ Course 4：Raindrop Sensor-Raindrop Detection
 --------------------------------------------
 
 **Working principle:** 
+
  - When water droplets land on the electrode plates, they create conduction or change resistance. The sensor converts this change in conductance/resistance into a voltage signal. Outputs can be:
  - Digital signal: HIGH indicates a water droplet is detected, LOW indicates no water droplets.
  - Analog signal: The voltage value changes with the amount of water droplets.
@@ -253,6 +261,7 @@ Course 4：Raindrop Sensor-Raindrop Detection
  - Alternatively, you can click this link to download the BIN firmware file we have prepared in advance and then burn the program into the ESP32 development board using Espressif's official burning tool. `4.RaindropDetection <https://www.dropbox.com/scl/fi/j6oue7pij59qyy9cwqclh/CH34x_Install_Windows_v3_4.zip?rlkey=xttzwik1qp56naxw8v7ostmkq&e=1&st=kcy0xjl1&dl=0>`_  
 
 **Effect display:**
+
  - When the electrodes of the raindrop sensor detect rain, the **serial monitor** will output "Rain Detected!"
 
 .. image:: _static/2/4.Rain.png
@@ -276,6 +285,7 @@ Course 5：DHT11 Sensor+Fan Module-Temperature controlled fan
  - When the signal is off, the circuit is de-energized, and the fan stops.
 
 **wiring:** 
+
  - DHT11 Sensor → ESP32 IO15
  - FAN Module → ESP32 IO27
 
@@ -345,6 +355,7 @@ Course 5：DHT11 Sensor+Fan Module-Temperature controlled fan
  - Alternatively, you can click this link to download the BIN firmware file we have prepared in advance and then burn the program into the ESP32 development board using Espressif's official burning tool. `5.DHT11FAN <https://www.dropbox.com/scl/fi/j6oue7pij59qyy9cwqclh/CH34x_Install_Windows_v3_4.zip?rlkey=xttzwik1qp56naxw8v7ostmkq&e=1&st=kcy0xjl1&dl=0>`_ 
 
 **Effect display:**
+
  - The **serial monitor** outputs the ambient temperature and humidity every 3 seconds. When the temperature reaches 30 degrees, the fan will start to rotate.
 
 .. image:: _static/2/5.dhttfan.png
@@ -484,6 +495,7 @@ Course 7：RFID Module+SG90 Servo-Card access control system
  - Internally, it consists of a DC motor, a reduction gear, and a potentiometer for feedback. The potentiometer monitors the servo position in real time, and the circuit automatically adjusts the motor rotation to maintain the servo at the target angle.
 
 **wiring:** 
+
  - RFID Module → ESP32 I2C
  - SG90 Servo  → ESP32 IO13（servo2）
 
@@ -556,6 +568,7 @@ Course 7：RFID Module+SG90 Servo-Card access control system
  - Alternatively, you can click this link to download the BIN firmware file we have prepared in advance and then burn the program into the ESP32 development board using Espressif's official burning tool. `6.RFIDDOOR <https://www.dropbox.com/scl/fi/j6oue7pij59qyy9cwqclh/CH34x_Install_Windows_v3_4.zip?rlkey=xttzwik1qp56naxw8v7ostmkq&e=1&st=kcy0xjl1&dl=0>`_ 
 
 **Effect display:**
+
  - When the ID card is close to the RFID module, the servo will rotate to simulate the door opening action. At the same time, the serial monitor will display the read card number and prompt "Door opened successfully".
 
 .. image:: _static/2/7.rfid.png
@@ -580,6 +593,7 @@ Course 8：Button Module+RGB Light Strip-Ambient Lighting
  - By continuously refreshing the data, dynamic effects such as color gradients, blinking, and flowing can be achieved.
 
 **wiring:** 
+
  - Button Module → ESP32 IO32
  - RGB Light Strip  → ESP32 IO5
 
@@ -882,6 +896,7 @@ Course 9：Speech Recognition Module-Voice-Controlled Light
  - Alternatively, you can click this link to download the BIN firmware file we have prepared in advance and then burn the program into the ESP32 development board using Espressif's official burning tool. `9.Voicelight <https://www.dropbox.com/scl/fi/j6oue7pij59qyy9cwqclh/CH34x_Install_Windows_v3_4.zip?rlkey=xttzwik1qp56naxw8v7ostmkq&e=1&st=kcy0xjl1&dl=0>`_ 
 
 **Effect display:**
+
  - When you say **Turn on the ligh** or **Turn on the light** to the voice recognition module, the LED light module will turn on or off.
 
 ----
