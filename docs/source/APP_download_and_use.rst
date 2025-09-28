@@ -23,8 +23,8 @@ App control
 
 **APP Download**
 
-- Android devices can download it by clicking this link and follow the phone's prompts to complete the installation.  
-  `APP Download <https://www.dropbox.com/scl/fi/j6oue7pij59qyy9cwqclh/CH34x_Install_Windows_v3_4.zip?rlkey=xttzwik1qp56naxw8v7ostmkq&e=1&st=kcy0xjl1&dl=0>`_
+- For Android system, click the link below to download the installation package, or scan the QR code below to download  
+  `Android APP Download <https://www.dropbox.com/scl/fi/20e3dp1gob8dso3bxre3a/Smart-Home.apk?rlkey=342yohnc73du0dtbu33l5rux0&st=mbnjjsey&dl=1>`_
 
 - iOS devices can download the app from the App Store. Search for "LAFVIN" to find and install it, or scan the QR code below to jump to the download page.  
 
@@ -32,7 +32,7 @@ App control
    :width: 600
    :align: center
 
-.. image:: _static/52.IOSAPP.png
+.. image:: _static/52.APP.png
    :width: 600
    :align: center
 
