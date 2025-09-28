@@ -15,6 +15,10 @@ Download the Code
 1. Click the link below to download the code we prepared. The complete code path is: **Code and Libraries** → **Code** → **10.SmartHome_CompleteCode**.
 `Download Code <https://www.dropbox.com/scl/fi/j6oue7pij59qyy9cwqclh/CH34x_Install_Windows_v3_4.zip?rlkey=xttzwik1qp56naxw8v7ostmkq&e=1&st=kcy0xjl1&dl=0>`_
 
+.. image:: _static/60.code.png
+   :width: 800
+   :align: center
+
 .. note::
 
    - The code numbers 1–9 in this folder are step-by-step tutorial examples, designed only for learning a single functional module. Using these sample codes may prevent some system features from being implemented.
