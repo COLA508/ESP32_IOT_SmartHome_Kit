@@ -9,7 +9,6 @@ The  Kit Course Learning
 
 .. note::
   The following courses all come with sample code. You have two options for flashing the code:
-
  - Option 1: If you choose to flash the code using the Arduino IDE, click here to jump to the Arduino IDE flashing tutorial. :ref:`Arduino IDE burning program`
 
  - Option 1: If you choose to flash the code using Espressif's official flashing tool, click here to jump to the official flashing tool flashing tutorial. :ref:`Direct Burn Program`
@@ -62,7 +61,7 @@ Course 1：LED Module-Breathing Light
 
  - You can directly copy the code provided above into the Arduino IDE for burning.
  - Find the **1.BreathingLight.ino** file in the provided folder, download it, open it with the Arduino IDE, and burn the program to the ESP32 development board.
- - Alternatively, you can click this link to download the BIN firmware file we have prepared in advance and then burn the program into the ESP32 development board using Espressif's official burning tool. `1.BreathingLight <https://www.dropbox.com/scl/fi/j6oue7pij59qyy9cwqclh/CH34x_Install_Windows_v3_4.zip?rlkey=xttzwik1qp56naxw8v7ostmkq&e=1&st=kcy0xjl1&dl=0>`_  
+ - Find the **1.BreathingLight.bin** file in the provided folder, download it and use Espressif's official flashing tool to flash the program to the ESP32 development board.
 
 **Effect display:**
 
@@ -114,7 +113,7 @@ Course 2：Light Sensor-Brightness Detection
 
  - You can directly copy the code provided above into the Arduino IDE for burning.
  - Find the **2.BrightnessDetection.ino** file in the provided folder, download it, open it with the Arduino IDE, and burn the program to the ESP32 development board.
- - Alternatively, you can click this link to download the BIN firmware file we have prepared in advance and then burn the program into the ESP32 development board using Espressif's official burning tool. `2.BrightnessDetection <https://www.dropbox.com/scl/fi/j6oue7pij59qyy9cwqclh/CH34x_Install_Windows_v3_4.zip?rlkey=xttzwik1qp56naxw8v7ostmkq&e=1&st=kcy0xjl1&dl=0>`_  
+ - Find the **2.BrightnessDetection.bin** file in the provided folder, download it and use Espressif's official flashing tool to flash the program to the ESP32 development board.
 
 **Effect display:**
 
@@ -196,8 +195,9 @@ Course 3：PIR Sensor-Human Body Detection
 
  - You can directly copy the code provided above into the Arduino IDE for burning.
  - Find the **3.HumanBodyDetection.ino** file in the provided folder, download it, open it with the Arduino IDE, and burn the program to the ESP32 development board.
- - Alternatively, you can click this link to download the BIN firmware file we have prepared in advance and then burn the program into the ESP32 development board using Espressif's official burning tool. `3.HumanBodyDetection <https://www.dropbox.com/scl/fi/j6oue7pij59qyy9cwqclh/CH34x_Install_Windows_v3_4.zip?rlkey=xttzwik1qp56naxw8v7ostmkq&e=1&st=kcy0xjl1&dl=0>`_  
+ - Find the **3.HumanBodyDetection.bin** file in the provided folder, download it and use Espressif's official flashing tool to flash the program to the ESP32 development board.
 
+**Effect display:**
 
 **Effect display:**
 
@@ -265,7 +265,7 @@ Course 4：Raindrop Sensor-Raindrop Detection
 
  - You can directly copy the code provided above into the Arduino IDE for burning.
  - Find the **4.RaindropDetection.ino** file in the provided folder, download it, open it with the Arduino IDE, and burn the program to the ESP32 development board.
- - Alternatively, you can click this link to download the BIN firmware file we have prepared in advance and then burn the program into the ESP32 development board using Espressif's official burning tool. `4.RaindropDetection <https://www.dropbox.com/scl/fi/j6oue7pij59qyy9cwqclh/CH34x_Install_Windows_v3_4.zip?rlkey=xttzwik1qp56naxw8v7ostmkq&e=1&st=kcy0xjl1&dl=0>`_  
+ - Find the **4.RaindropDetection.bin** file in the provided folder, download it and use Espressif's official flashing tool to flash the program to the ESP32 development board. 
 
 **Effect display:**
 
@@ -359,7 +359,7 @@ Course 5：DHT11 Sensor+Fan Module-Temperature controlled fan
 
  - You can directly copy the code provided above into the Arduino IDE for burning.
  - Find the **5.DHT11FAN.ino** file in the provided folder, download it, open it with the Arduino IDE, and burn the program to the ESP32 development board.
- - Alternatively, you can click this link to download the BIN firmware file we have prepared in advance and then burn the program into the ESP32 development board using Espressif's official burning tool. `5.DHT11FAN <https://www.dropbox.com/scl/fi/j6oue7pij59qyy9cwqclh/CH34x_Install_Windows_v3_4.zip?rlkey=xttzwik1qp56naxw8v7ostmkq&e=1&st=kcy0xjl1&dl=0>`_ 
+ - Find the **5.DHT11FAN.bin** file in the provided folder, download it and use Espressif's official flashing tool to flash the program to the ESP32 development board. 
 
 **Effect display:**
 
@@ -475,7 +475,8 @@ Course 6：LCD1602 Screen-Environmental Status Display
 
  - You can directly copy the code provided above into the Arduino IDE for burning.
  - Find the **6.EnvironmentalDisplay.ino** file in the provided folder, download it, open it with the Arduino IDE, and burn the program to the ESP32 development board.
- - Alternatively, you can click this link to download the BIN firmware file we have prepared in advance and then burn the program into the ESP32 development board using Espressif's official burning tool. `6.EnvironmentalDisplay <https://www.dropbox.com/scl/fi/j6oue7pij59qyy9cwqclh/CH34x_Install_Windows_v3_4.zip?rlkey=xttzwik1qp56naxw8v7ostmkq&e=1&st=kcy0xjl1&dl=0>`_
+ - Find the **6.EnvironmentalDisplay.bin** file in the provided folder, download it and use Espressif's official flashing tool to flash the program to the ESP32 development board. 
+
 
 
 **Effect display:**
@@ -571,9 +572,8 @@ Course 7：RFID Module+SG90 Servo-Card access control system
 **Code burning options**
 
  - You can directly copy the code provided above into the Arduino IDE for burning.
- - Find the **6.RFIDDOOR.ino** file in the provided folder, download it, open it with the Arduino IDE, and burn the program to the ESP32 development board.
- - Alternatively, you can click this link to download the BIN firmware file we have prepared in advance and then burn the program into the ESP32 development board using Espressif's official burning tool. `6.RFIDDOOR <https://www.dropbox.com/scl/fi/j6oue7pij59qyy9cwqclh/CH34x_Install_Windows_v3_4.zip?rlkey=xttzwik1qp56naxw8v7ostmkq&e=1&st=kcy0xjl1&dl=0>`_ 
-
+ - Find the **7.RFIDDOOR.ino** file in the provided folder, download it, open it with the Arduino IDE, and burn the program to the ESP32 development board.
+ - Find the **7.RFIDDOOR.bin** file in the provided folder, download it and use Espressif's official flashing tool to flash the program to the ESP32 development board. 
 **Effect display:**
 
  - When the ID card is close to the RFID module, the servo will rotate to simulate the door opening action. At the same time, the serial monitor will display the read card number and prompt "Door opened successfully".
@@ -756,7 +756,7 @@ Course 8：Button Module+RGB Light Strip-Ambient Lighting
 
  - You can directly copy the code provided above into the Arduino IDE for burning.
  - Find the **8.RGBLIGHT.ino** file in the provided folder, download it, open it with the Arduino IDE, and burn the program to the ESP32 development board.
- - Alternatively, you can click this link to download the BIN firmware file we have prepared in advance and then burn the program into the ESP32 development board using Espressif's official burning tool. `8.RGBLIGHT <https://www.dropbox.com/scl/fi/j6oue7pij59qyy9cwqclh/CH34x_Install_Windows_v3_4.zip?rlkey=xttzwik1qp56naxw8v7ostmkq&e=1&st=kcy0xjl1&dl=0>`_ 
+ - Find the **8.RGBLIGHT.bin** file in the provided folder, download it and use Espressif's official flashing tool to flash the program to the ESP32 development board. 
 
  **Effect display:**
 
@@ -900,7 +900,7 @@ Course 9：Speech Recognition Module-Voice-Controlled Light
 
  - You can directly copy the code provided above into the Arduino IDE for burning.
  - Find the **9.Voicelight.ino** file in the provided folder, download it, open it with the Arduino IDE, and burn the program to the ESP32 development board.
- - Alternatively, you can click this link to download the BIN firmware file we have prepared in advance and then burn the program into the ESP32 development board using Espressif's official burning tool. `9.Voicelight <https://www.dropbox.com/scl/fi/j6oue7pij59qyy9cwqclh/CH34x_Install_Windows_v3_4.zip?rlkey=xttzwik1qp56naxw8v7ostmkq&e=1&st=kcy0xjl1&dl=0>`_ 
+ - Find the **9.Voicelight.bin** file in the provided folder, download it and use Espressif's official flashing tool to flash the program to the ESP32 development board. 
 
 **Effect display:**
 
