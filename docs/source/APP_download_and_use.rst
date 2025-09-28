@@ -32,6 +32,10 @@ App control
    :width: 400
    :align: center
 
+.. raw:: html
+
+   <div style="margin-top: 30px;"></div>
+   
 .. image:: _static/52.Appdowload.png
    :width: 600
    :align: center
