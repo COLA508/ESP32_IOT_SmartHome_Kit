@@ -16,8 +16,12 @@ Download the Code
 `Download Code <https://www.dropbox.com/scl/fi/j6oue7pij59qyy9cwqclh/CH34x_Install_Windows_v3_4.zip?rlkey=xttzwik1qp56naxw8v7ostmkq&e=1&st=kcy0xjl1&dl=0>`_
 
 .. image:: _static/60.code.png
-   :width: 800
+   :width: 600
    :align: center
+
+.. raw:: html
+
+   <div style="margin-top: 30px;"></div>
 
 .. note::
 
@@ -154,29 +158,31 @@ Install CH340 Driver
 Download burning tools
 ~~~~~~~~~~~~~~~~~~~
 
-1. Click this link to enter Espressif's official burning tool download page.  
+1. You can directly click this link to download the burning tool installation package we prepared. `Burning tool installation package <https://www.dropbox.com/scl/fo/r81afjixw65y88jikwxno/AM8XTGDtfcEJDgN0jHyMbRY?rlkey=4lvaoh0axd9nhvk9al7qukoi5&st=1hqtehms&dl=1>`_ Or refer to the following steps to download the latest installation package provided by Espressif's official website
+
+2. Click this link to enter Espressif's official burning tool download page.  
    `Espressif Burning Tool <https://www.espressif.com.cn/zh-hans/support/download/other-tools>`_
 
 .. image:: _static/42.TOOL.png
    :width: 600
    :align: center
 
-2. Click the Download button in the image to automatically download Espressif's official programming tool. The tool's features and instructions are also provided at the bottom of the page. If you're interested, please read and learn more.
+3. Click the Download button in the image to automatically download Espressif's official programming tool. The tool's features and instructions are also provided at the bottom of the page. If you're interested, please read and learn more.
 
 .. image:: _static/43.TOOL.png
    :width: 600
    :align: center
 
-3. After decompressing the downloaded compressed file, you will see several files contained in it, as shown in the figure below.
+4. After decompressing the downloaded compressed file, you will see several files contained in it, as shown in the figure below.
 
 .. image:: _static/44.TOOL.png
    :width: 600
    :align: center
 
-4. Click this link to download the bin firmware file we prepared for you.  
+5. Click this link to download the bin firmware file we prepared for you.  
    `Download firmware <https://www.dropbox.com/scl/fi/j6oue7pij59qyy9cwqclh/CH34x_Install_Windows_v3_4.zip?rlkey=xttzwik1qp56naxw8v7ostmkq&e=1&st=kcy0xjl1&dl=0>`_
 
-5. Move the downloaded bin firmware file to the bin folder in the previously downloaded and unzipped burning tool directory.
+6. Move the downloaded bin firmware file to the bin folder in the previously downloaded and unzipped burning tool directory.
 
 
 Burn firmware
