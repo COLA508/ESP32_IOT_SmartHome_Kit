@@ -136,7 +136,7 @@ Download the Driver
       :align: center
 
 4. Alternatively, you can download the prepared installation package directly:  
-   `Installation Package (Windows) <https://www.dropbox.com/scl/fi/j6oue7pij59qyy9cwqclh/CH34x_Install_Windows_v3_4.zip?rlkey=xttzwik1qp56naxw8v7ostmkq&e=1&st=kcy0xjl1&dl=0>`_  
+   `CH340 Installation Package（Windows）<https://www.dropbox.com/scl/fo/c4bb59fr42qcs9cxgexan/AIMImtqevecMqYNMJVK1ZBM?rlkey=9afntuwy2usxfxbl7xjkoirsy&st=89a5bx6b&dl=1>`_  
 
 
 Install the Driver
@@ -292,9 +292,9 @@ Download Libraries
 ~~~~~~~~~~~~~~~~~~
 
 1. We've compiled all the libraries necessary to run this suite. Please click the link below to download them and follow the instructions to complete the installation:  
-   `Download libraries <https://www.dropbox.com/scl/fi/j6oue7pij59qyy9cwqclh/CH34x_Install_Windows_v3_4.zip?rlkey=xttzwik1qp56naxw8v7ostmkq&e=1&st=kcy0xjl1&dl=0>`_
+   `Download libraries <https://www.dropbox.com/scl/fo/syf1zstu58f4xlcld2nss/ACJOi93PcIafo5yGabrprDA?rlkey=hoc2undykymrxac7z8nclpk9u&st=el86zaw9&dl=1>`_
 
-2. Decompress the downloaded library package and confirm that all the library files shown in the figure are included.  
+2. Unzip the downloaded library file. The library file storage path is **Code and Libraries** → **Libraries** . Open it and confirm that it contains the library file shown in the figure below. 
 
 .. image:: _static/26.lib.png
    :width: 700

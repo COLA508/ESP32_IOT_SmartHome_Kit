@@ -12,10 +12,10 @@ After completing the previous steps, ensure that the CH340 serial port driver ha
 Download the Code
 ~~~~~~~~~~~~~~~~~
 
-Click the link below to download the sample code we have prepared:  
+1. Click the link below to download the code we prepared. The complete code path is: **Code and Libraries** → **Code** → **10.10.SmartHome_CompleteCode**.
 `Download Code <https://www.dropbox.com/scl/fi/j6oue7pij59qyy9cwqclh/CH34x_Install_Windows_v3_4.zip?rlkey=xttzwik1qp56naxw8v7ostmkq&e=1&st=kcy0xjl1&dl=0>`_
 
-1. Click **File → Open** in Arduino IDE.  
+2. ick **File → Open** in Arduino IDE.  
 2. In the pop-up window, locate the downloaded code, select the corresponding folder or file, and click **Open**.  
 
 .. image:: _static/36.upload.png
