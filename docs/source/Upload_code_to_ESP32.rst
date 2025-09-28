@@ -158,7 +158,7 @@ Install CH340 Driver
 Download burning tools
 ~~~~~~~~~~~~~~~~~~~
 
-1. You can directly click this link to download the burning tool installation package we prepared. `Burning tool installation package <https://www.dropbox.com/scl/fo/r81afjixw65y88jikwxno/AM8XTGDtfcEJDgN0jHyMbRY?rlkey=4lvaoh0axd9nhvk9al7qukoi5&st=1hqtehms&dl=1>`_ Or refer to the following steps to download the latest installation package provided by Espressif's official website
+1. You can directly click this link to download the burning tool installation package we prepared. `Burning tool installation package, <https://www.dropbox.com/scl/fo/r81afjixw65y88jikwxno/AM8XTGDtfcEJDgN0jHyMbRY?rlkey=4lvaoh0axd9nhvk9al7qukoi5&st=1hqtehms&dl=1>`_ Or refer to the following steps to download the latest installation package provided by Espressif's official website
 
 2. Click this link to enter Espressif's official burning tool download page.  
    `Espressif Burning Tool <https://www.espressif.com.cn/zh-hans/support/download/other-tools>`_
