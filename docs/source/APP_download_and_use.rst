@@ -29,10 +29,10 @@ App control
 - iOS devices can download the app from the App Store. Search for "LAFVIN" to find and install it, or scan the QR code below to jump to the download page.  
 
 .. image:: _static/51.APP1.png
-   :width: 600
+   :width: 400
    :align: center
 
-.. image:: _static/52.APP.png
+.. image:: _static/52.Appdowload.png
    :width: 600
    :align: center
 
