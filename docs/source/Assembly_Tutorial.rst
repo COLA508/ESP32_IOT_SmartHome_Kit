@@ -204,7 +204,7 @@ The installation is shown in the following figure:
 
 Step 1-3: Install the window gear and acrylic plate onto the basswood board
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-Parts list: Basswood board with "P"、 window acrylic driver board (shorter acrylic)、 assembled gear、 servo package (shortest screw - M2*4mm)、 M3*12mm screw (4 PCS)、 M3 nut (4 PCS).
+Parts list: Basswood board with "P"、 window acrylic driver board (shorter acrylic)、 assembled gear、 servo package (shortest screw - M2*4mm)、 M3*12mm screw (4 PCS)、 M3 nut (4 PCS)、Gasket (4 PCS).
 
 The installation is shown in the following figure:
 
@@ -252,16 +252,13 @@ The installation is shown in the following figure:
    :alt: Solar1
    :align: center
 
+.. raw:: html
 
+   <div style="margin-top: 30px;"></div>
 
-.. image:: _static/1/21.Solar2.png
-   :alt: Solar2
-   :align: center
-
-   
 .. admonition:: Precautions
 
- - First, disconnect the wiring from both ends of the indicator light. Thread the solar panel wiring through the hole marked "R" in the basswood board and connect it to the indicator light wiring. Use some glue to secure it securely.
+ - The back of the solar panel is fixed to the wooden board using glue.
 
 Step 4: Install of the Sensor Module
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -374,7 +371,7 @@ The installation is shown in the following figure:
 
 Step 1-3: Install the gate gear and acrylic plate onto the basswood board
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-Parts list: Basswood board with "T"、 gate acrylic driver board (shorter acrylic)、 assembled gear、 servo package (shortest screw - M2*4mm)、 M3*12mm screw (4 PCS)、 M3 nut (4 PCS).
+Parts list: Basswood board with "T"、 gate acrylic driver board (shorter acrylic)、 assembled gear、 servo package (shortest screw - M2*4mm)、 M3*12mm screw (4 PCS)、 M3 nut (4 PCS)、Gasket (4 PCS).
 
 The installation is shown in the following figure:
 
