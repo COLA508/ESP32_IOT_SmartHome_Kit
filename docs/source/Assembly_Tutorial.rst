@@ -20,9 +20,16 @@ Wiring
 .. image:: _static/1/53.wiring.png
    :align: center
 
+
+.. raw:: html
+
+   <div style="margin-top: 30px;"></div>
+
+
 .. list-table::
    :header-rows: 1
    :widths: 50 20
+   :align: center
 
    * - Component
      - ESP32 Pin
@@ -52,6 +59,7 @@ Wiring
      - I2C-SCL, SDA
    * - RGB Light Strip
      - 5
+
 
 ----
 
