@@ -102,6 +102,11 @@ The following table lists all components included in the **ESP32-IOT-SmartHome-k
         :align: center
      - SG90 Servo
      - 2 pcs
+   * - .. image:: _static/bom/26.Solar.png
+        :width: 200
+        :align: center
+     - Solar module
+     - 1 pcs
    * - .. image:: _static/bom/16.typec.png
         :width: 200
         :align: center
