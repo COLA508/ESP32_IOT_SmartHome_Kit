@@ -32,7 +32,7 @@ The following table lists all components included in the **ESP32-IOT-SmartHome-k
         :align: center
      - ESP32 DevKit
      - 1 pcs
-   * - .. image:: _static/bom/2.esp32exboard.png
+   * - .. image:: _static/bom/2.esp32expboard.png
         :width: 100
         :align: center
      - ESP32 Expansion Board
@@ -82,7 +82,7 @@ The following table lists all components included in the **ESP32-IOT-SmartHome-k
         :align: center
      - Speech Recognition Module
      - 1 pcs
-   * - .. image:: _static/bom/12.rgb.png
+   * - .. image:: _static/bom/12.rgb1.png
         :width: 100
         :align: center
      - RGB Light Strip
@@ -97,7 +97,7 @@ The following table lists all components included in the **ESP32-IOT-SmartHome-k
         :align: center
      - RFID Module + IC Card
      - 1 set
-   * - .. image:: _static/bom/15.sevro.png
+   * - .. image:: _static/bom/15.servo.png
         :width: 100
         :align: center
      - SG90 Servo
@@ -132,7 +132,7 @@ The following table lists all components included in the **ESP32-IOT-SmartHome-k
         :align: center
      - Gasket
      - 12 pcs
-   * - .. image:: _static/bom/20.screwdriver.png
+   * - .. image:: _static/bom/20.Screwdriver.png
         :width: 100
         :align: center
      - Phillips Screwdriver
