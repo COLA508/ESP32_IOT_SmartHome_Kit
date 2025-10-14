@@ -92,7 +92,7 @@ The following table lists all components included in the **ESP32-IOT-SmartHome-k
         :align: center
      - LCD1602 Display
      - 1 pcs
-   * - .. image:: _static/bom/14.rfid.png
+   * - .. image:: _static/bom/14.rfid1.png
         :width: 100
         :align: center
      - RFID Module + IC Card
