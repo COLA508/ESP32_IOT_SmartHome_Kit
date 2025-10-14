@@ -21,44 +21,68 @@ The following table lists all components included in the **ESP32-IOT-SmartHome-k
 
 .. list-table::
    :header-rows: 1
-   :widths: 50 20
+   :widths: 30 50 20
+   :align: center
 
-   * - Item
+   * - Image
+     - Item
      - Quantity
-   * - ESP32 DevKit
+
+   * -  .. image:: _static/bom/1.esp32board.png
+          :width: 60px
+          :align: center
+     - ESP32 DevKit
      - 1 pcs
+
+
    * - ESP32 Expansion Board
      - 1 pcs
+
    * - Battery Box
      - 1 pcs
+
    * - DHT11 Sensor
      - 1 pcs
+
    * - PIR Sensor
      - 1 pcs
+
    * - Raindrop Sensor
      - 1 pcs
+
    * - Light Sensor
      - 1 pcs
+
    * - LED Module
      - 1 pcs
+
    * - Button Module
      - 1 pcs
+
    * - Motor Fan Module
      - 1 pcs
+
    * - Speech Recognition Module
      - 1 pcs
+
    * - RGB Light Strip
      - 1 pcs
+
    * - LCD1602 Display
      - 1 pcs
+
    * - RFID Module + IC Card
      - 1 set
+
    * - SG90 Servo
      - 2 pcs
+
    * - Type-C Data Cable
      - 1 pcs
+
    * - 3P Cable
      - 9 pcs
+
    * - 4P Cable
      - 4 pcs
    * - Basswood Board
