@@ -83,7 +83,7 @@ The following table lists all components included in the **ESP32-IOT-SmartHome-k
      - Speech Recognition Module
      - 1 pcs
    * - .. image:: _static/bom/12.rgb1.png
-        :width: 300
+        :width: 400
         :align: center
      - RGB Light Strip
      - 1 pcs
@@ -98,12 +98,12 @@ The following table lists all components included in the **ESP32-IOT-SmartHome-k
      - RFID Module + IC Card
      - 1 set
    * - .. image:: _static/bom/15.servo.png
-        :width: 100
+        :width: 200
         :align: center
      - SG90 Servo
      - 2 pcs
    * - .. image:: _static/bom/16.typec.png
-        :width: 100
+        :width: 200
         :align: center
      - Type-C Data Cable
      - 1 pcs
