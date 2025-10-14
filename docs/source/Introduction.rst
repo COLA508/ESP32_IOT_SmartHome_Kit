@@ -28,12 +28,11 @@ The following table lists all components included in the **ESP32-IOT-SmartHome-k
      - Item
      - Quantity
 
-   * -  .. image:: _static/bom/1.esp32board.png
+   * - .. image:: _static/bom/1.esp32board.png
           :width: 60px
           :align: center
      - ESP32 DevKit
      - 1 pcs
-
 
    * - ESP32 Expansion Board
      - 1 pcs
