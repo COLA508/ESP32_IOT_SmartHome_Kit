@@ -19,15 +19,64 @@ Bill of Materials
 
 The following table lists all components included in the **ESP32-IOT-SmartHome-kit**. Please check carefully to ensure that all parts are complete before starting.  
 
-Please check the list to ensure that all parts are intact. If you find missing ones, please contact our sales staff immediately.
+.. list-table::
+   :header-rows: 1
+   :widths: 50 20
 
-+----+--------------------------------+-------------------------------+-----+
-| #  | Image                            | NAME                          | QTY |
-+====+================================+===============================+=====+
-| 1  | .. image:: _static/bom/1.esp32.png
-|        :width: 600
-|        :align: center            | ESP32 PLUS main control board | 1   |
-+----+--------------------------------+-------------------------------+-----+
+   * - Item
+     - Quantity
+   * - ESP32 DevKit
+     - 1 pcs
+   * - ESP32 Expansion Board
+     - 1 pcs
+   * - Battery Box
+     - 1 pcs
+   * - DHT11 Sensor
+     - 1 pcs
+   * - PIR Sensor
+     - 1 pcs
+   * - Raindrop Sensor
+     - 1 pcs
+   * - Light Sensor
+     - 1 pcs
+   * - LED Module
+     - 1 pcs
+   * - Button Module
+     - 1 pcs
+   * - Motor Fan Module
+     - 1 pcs
+   * - Speech Recognition Module
+     - 1 pcs
+   * - RGB Light Strip
+     - 1 pcs
+   * - LCD1602 Display
+     - 1 pcs
+   * - RFID Module + IC Card
+     - 1 set
+   * - SG90 Servo
+     - 2 pcs
+   * - Type-C Data Cable
+     - 1 pcs
+   * - 3P Cable
+     - 9 pcs
+   * - 4P Cable
+     - 4 pcs
+   * - Basswood Board
+     - 1 set
+   * - Painted Basswood
+     - 1 pcs    
+   * - Gasket
+     - 12 pcs  
+   * - Phillips Screwdriver
+     - 1 pcs
+   * - Screw Bag
+     - 1 bag
+   * - Acrylic Sheet
+     - 1 set
+   * - Glue
+     - 5 pcs
+
+----
 
 Function Display
 ----------------
