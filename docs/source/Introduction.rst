@@ -27,128 +27,128 @@ The following table lists all components included in the **ESP32-IOT-SmartHome-k
    * - PIC
      - Item
      - Quantity
-   * - .. image:: _static/bom/1.esp32board.png
-        :width: 60
+   * - .. image:: _static/bom/1.esp32.png
+        :width: 100
         :align: center
      - ESP32 DevKit
      - 1 pcs
-   * - .. image:: _static/bom/2.expansion.png
-        :width: 60
+   * - .. image:: _static/bom/2.esp32exboard.png
+        :width: 100
         :align: center
      - ESP32 Expansion Board
      - 1 pcs
    * - .. image:: _static/bom/3.battery.png
-        :width: 60
+        :width: 100
         :align: center
      - Battery Box
      - 1 pcs
    * - .. image:: _static/bom/4.dht11.png
-        :width: 60
+        :width: 100
         :align: center
      - DHT11 Sensor
      - 1 pcs
    * - .. image:: _static/bom/5.pir.png
-        :width: 60
+        :width: 100
         :align: center
      - PIR Sensor
      - 1 pcs
-   * - .. image:: _static/bom/6.raindrop.png
-        :width: 60
+   * - .. image:: _static/bom/6.rain.png
+        :width: 100
         :align: center
      - Raindrop Sensor
      - 1 pcs
    * - .. image:: _static/bom/7.light.png
-        :width: 60
+        :width: 100
         :align: center
      - Light Sensor
      - 1 pcs
    * - .. image:: _static/bom/8.led.png
-        :width: 60
+        :width: 100
         :align: center
      - LED Module
      - 1 pcs
    * - .. image:: _static/bom/9.button.png
-        :width: 60
+        :width: 100
         :align: center
      - Button Module
      - 1 pcs
    * - .. image:: _static/bom/10.fan.png
-        :width: 60
+        :width: 100
         :align: center
      - Motor Fan Module
      - 1 pcs
    * - .. image:: _static/bom/11.speech.png
-        :width: 60
+        :width: 100
         :align: center
      - Speech Recognition Module
      - 1 pcs
    * - .. image:: _static/bom/12.rgb.png
-        :width: 60
+        :width: 100
         :align: center
      - RGB Light Strip
      - 1 pcs
    * - .. image:: _static/bom/13.lcd.png
-        :width: 60
+        :width: 100
         :align: center
      - LCD1602 Display
      - 1 pcs
    * - .. image:: _static/bom/14.rfid.png
-        :width: 60
+        :width: 100
         :align: center
      - RFID Module + IC Card
      - 1 set
-   * - .. image:: _static/bom/15.sg90.png
-        :width: 60
+   * - .. image:: _static/bom/15.sevro.png
+        :width: 100
         :align: center
      - SG90 Servo
      - 2 pcs
    * - .. image:: _static/bom/16.typec.png
-        :width: 60
+        :width: 100
         :align: center
      - Type-C Data Cable
      - 1 pcs
    * - .. image:: _static/bom/17.3p.png
-        :width: 60
+        :width: 100
         :align: center
      - 3P Cable
      - 9 pcs
    * - .. image:: _static/bom/18.4p.png
-        :width: 60
+        :width: 100
         :align: center
      - 4P Cable
      - 4 pcs
    * - .. image:: _static/bom/19.basswood.png
-        :width: 60
+        :width: 100
         :align: center
      - Basswood Board
      - 1 set
    * - .. image:: _static/bom/20.painted.png
-        :width: 60
+        :width: 100
         :align: center
      - Painted Basswood
      - 1 pcs
-   * - .. image:: _static/bom/21.gasket.png
-        :width: 60
+   * - .. image:: _static/bom/19.Gasket.png
+        :width: 100
         :align: center
      - Gasket
      - 12 pcs
-   * - .. image:: _static/bom/22.screwdriver.png
-        :width: 60
+   * - .. image:: _static/bom/20.screwdriver.png
+        :width: 100
         :align: center
      - Phillips Screwdriver
      - 1 pcs
    * - .. image:: _static/bom/23.screwbag.png
-        :width: 60
+        :width: 100
         :align: center
      - Screw Bag
      - 1 bag
    * - .. image:: _static/bom/24.acrylic.png
-        :width: 60
+        :width: 100
         :align: center
      - Acrylic Sheet
      - 1 set
    * - .. image:: _static/bom/25.glue.png
-        :width: 60
+        :width: 100
         :align: center
      - Glue
      - 5 pcs
