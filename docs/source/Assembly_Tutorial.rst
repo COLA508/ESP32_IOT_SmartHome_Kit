@@ -14,6 +14,28 @@ Installation video tutorial
 
 ----
 
+Wiring
+---------
+
+.. image:: _static/1/53.wiring.png
+   :width: 600
+   :align: center
+
+.. raw:: html
+
+   <div style="margin-top: 30px;"></div>
+
+ - With the exception of the servos, all sensors and components in the system utilize standard XH2.54 (3/4-pin) connectors with reverse polarity protection, ensuring plug-and-play operation without requiring polarity identification.
+ - When connecting the servos, please follow the cable colors shown in the following diagram.
+
+.. raw:: html
+
+   <div style="margin-top: 30px;"></div>
+
+ .. image:: _static/1/53.wiring.png
+   :width: 600
+   :align: center
+----
 Screw size comparison
 ---------------------
 
