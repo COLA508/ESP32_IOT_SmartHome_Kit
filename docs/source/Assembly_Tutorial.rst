@@ -20,12 +20,46 @@ Wiring
 .. image:: _static/1/53.wiring.png
    :align: center
 
+.. list-table::
+   :header-rows: 1
+   :widths: 50 20
+
+   * - Component
+     - ESP32 Pin
+   * - Window Servo
+     - 4
+   * - Door Servo
+     - 13
+   * - Fan
+     - 27
+   * - PIR Sensor
+     - 33
+   * - LED
+     - 26
+   * - Light Sensor
+     - 34
+   * - Button
+     - 32
+   * - DHT11 Sensor
+     - 15
+   * - Raindrop Sensor
+     - 35
+   * - Speech Recognition
+     - 16, 17
+   * - RFID
+     - I2C-SCL, SDA
+   * - LCD1602
+     - I2C-SCL, SDA
+   * - RGB Light Strip
+     - 5
+
 ----
 
  - With the exception of the servos, all sensors and components in the system utilize standard XH2.54 (3/4-pin) connectors with reverse polarity protection, ensuring plug-and-play operation without requiring polarity identification.
  - When connecting the servos, please follow the cable colors shown in the following diagram.
 
  .. image:: _static/1/54.servo.png
+   :width: 600
    :align: center
 
 ----
