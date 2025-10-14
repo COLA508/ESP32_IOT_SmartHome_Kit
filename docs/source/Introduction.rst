@@ -19,37 +19,15 @@ Bill of Materials
 
 The following table lists all components included in the **ESP32-IOT-SmartHome-kit**. Please check carefully to ensure that all parts are complete before starting.  
 
-.. list-table::
-   :header-rows: 1
-   :widths: 30 50 20
-   :align: center
+Please check the list to ensure that all parts are intact. If you find missing ones, please contact our sales staff immediately.
 
-   * - Image
-     - Item
-     - Quantity
-
-   * - |
-         .. image:: _static/bom/1.esp32board.png
-            :width: 600
-            :align: center
-     - ESP32 DevKit
-     - 1 pcs
-
-   * - |
-         .. image:: _static/bom/2.exp32exboard.png
-            :width: 600
-            :align: center
-     - ESP32 Expansion Board
-     - 1 pcs
-
-   * - |
-         .. image:: _static/bom/3.battery.png
-            :width: 600
-            :align: center
-     - Battery Box
-     - 1 pcs
-
-----
++----+--------------------------------+-------------------------------+-----+
+| #  | Image                            | NAME                          | QTY |
++====+================================+===============================+=====+
+| 1  | .. image:: _static/bom/1.esp32.png
+|        :width: 600
+|        :align: center            | ESP32 PLUS main control board | 1   |
++----+--------------------------------+-------------------------------+-----+
 
 Function Display
 ----------------
