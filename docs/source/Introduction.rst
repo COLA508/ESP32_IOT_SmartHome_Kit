@@ -148,7 +148,7 @@ The following table lists all components included in the **ESP32-IOT-SmartHome-k
      - Phillips Screwdriver
      - 1 pcs
    * - .. image:: _static/bom/21.sleeve.png
-        :width: 100
+        :width: 200
         :align: center
      - Sleeve
      - 5 pcs
