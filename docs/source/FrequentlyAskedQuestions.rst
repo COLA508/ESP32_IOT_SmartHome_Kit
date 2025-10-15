@@ -37,7 +37,7 @@ Frequently Asked Questions
 
 ----
 
- *6.App operation delays or unresponsiveness.*
+*6.App operation delays or unresponsiveness.*
  - Please ensure a stable WiFi signal.
  - If the connection is poor, reconnect to WiFi or move closer to the router. It is recommended to use the kit within 3 meters of the router.
  - If the device remains unresponsive for an extended period, press the "RST" button on the ESP32 to reboot the system.
