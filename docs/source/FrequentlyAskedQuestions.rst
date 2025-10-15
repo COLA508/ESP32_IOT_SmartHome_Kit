@@ -60,6 +60,16 @@ Frequently Asked Questions
 *9.If the LCD1602 screen brightness is low or there is no display, please check the following.*
  - Use an external battery for power. USB power may cause insufficient voltage, resulting in low screen brightness or no display.
  - Ensure the battery voltage is above 7.5V. If the voltage is lower than this, it is recommended to replace the battery promptly to ensure normal operation of the system.
+
 ----
 
+*10.Is the voice recognition module not recognizing your voice?*
+ - Please make sure the voice recognition module is connected correctly.
+ - The baud rate should be set to 115200.
+ - Please use it in a quiet environment and ensure that it is within 0.5 meters of the microphone.
+ - This module only supports fixed commands, such as "Light on," "Light off," "Fan on," and "Fan off."
+ - Other unregistered voice commands will be invalid.
 
+----
+
+*If you encounter other problems or cannot solve them yourself, please contact the after-sales technical support team and we will provide you with assistance in a timely manner.*
