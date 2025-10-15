@@ -102,7 +102,7 @@ The following table lists all components included in the **ESP32-IOT-SmartHome-k
         :align: center
      - SG90 Servo
      - 2 pcs
-   * - .. image:: _static/bom/26.Solar.png
+   * - .. image:: _static/bom/21.tyn.png
         :width: 200
         :align: center
      - Solar module
@@ -122,12 +122,12 @@ The following table lists all components included in the **ESP32-IOT-SmartHome-k
         :align: center
      - 4P Cable
      - 4 pcs
-   * - .. image:: _static/bom/19.basswood.png
+   * - .. image:: _static/bom/26.basswood.png
         :width: 100
         :align: center
      - Basswood Board
      - 1 set
-   * - .. image:: _static/bom/20.painted.png
+   * - .. image:: _static/bom/22.caiban.png
         :width: 100
         :align: center
      - Painted Basswood
