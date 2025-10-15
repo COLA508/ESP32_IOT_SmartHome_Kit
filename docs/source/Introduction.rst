@@ -132,7 +132,7 @@ The following table lists all components included in the **ESP32-IOT-SmartHome-k
         :align: center
      - Painted Basswood
      - 1 pcs
-      * - .. image:: _static/bom/24.acrylic.png
+   * - .. image:: _static/bom/24.acrylic.png
         :width: 100
         :align: center
      - Acrylic Sheet
@@ -147,7 +147,7 @@ The following table lists all components included in the **ESP32-IOT-SmartHome-k
         :align: center
      - Phillips Screwdriver
      - 1 pcs
-      * - .. image:: _static/bom/21.sleeve.png
+   * - .. image:: _static/bom/21.sleeve.png
         :width: 100
         :align: center
      - Sleeve
