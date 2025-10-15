@@ -11,3 +11,4 @@ ESP32 IOT SmartHome Kit
    Upload_code_to_ESP32
    APP_download_and_use
    The_kit_course_learning
+   FrequentlyAskedQuestions
