@@ -138,7 +138,7 @@ The following table lists all components included in the **ESP32-IOT-SmartHome-k
      - Acrylic Sheet
      - 1 pcs
    * - .. image:: _static/bom/19.Gasket.png
-        :width: 100
+        :width: 80
         :align: center
      - Gasket
      - 12 pcs
@@ -153,12 +153,12 @@ The following table lists all components included in the **ESP32-IOT-SmartHome-k
      - Sleeve
      - 5 pcs
    * - .. image:: _static/bom/23.screwbag.png
-        :width: 100
+        :width: 300
         :align: center
      - Screw Bag
      - 3 bags
    * - .. image:: _static/bom/25.glue.png
-        :width: 100
+        :width: 200
         :align: center
      - Glue
      - 5 pcs
