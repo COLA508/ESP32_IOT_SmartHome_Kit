@@ -228,7 +228,7 @@ The effect of the first floor installation of the cabin is shown in the figure:
 
 ----
 
-3.nstallation of the second floor
+3.Installation of the second floor
 --------------------------------
 
 Step 1: Install window 
@@ -266,7 +266,7 @@ Parts list: Basswood board with "P"、 window acrylic driver board (shorter acry
 
 The installation is shown in the following figure:
 
-.. image:: _static/1/17.window_acrylic.png
+.. image:: _static/1/55.window.png
    :alt: window acrylic
    :align: center
 
@@ -310,13 +310,18 @@ The installation is shown in the following figure:
    :alt: Solar1
    :align: center
 
+
+.. image:: _static/1/57.TYN.png
+   :alt: Solar1
+   :align: center
+
 .. raw:: html
 
    <div style="margin-top: 30px;"></div>
 
 .. admonition:: Precautions
 
- - The back of the solar panel is fixed to the wooden board using glue.
+ - The back of the solar panel is fixed to the wooden board with glue. It is more secure if it is glued in the position shown in the picture above.
 
 Step 4: Install of the Sensor Module
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -433,7 +438,7 @@ Parts list: Basswood board with "T"、 gate acrylic driver board (shorter acryli
 
 The installation is shown in the following figure:
 
-.. image:: _static/1/29.door_acrylic.png
+.. image:: _static/1/56.door.png
    :alt: door acrylic
    :align: center
 
