@@ -126,11 +126,16 @@ The following table lists all components included in the **ESP32-IOT-SmartHome-k
         :width: 100
         :align: center
      - Basswood Board
-     - 1 set
+     - 6 pcs
    * - .. image:: _static/bom/22.caiban.png
         :width: 100
         :align: center
      - Painted Basswood
+     - 1 pcs
+      * - .. image:: _static/bom/24.acrylic.png
+        :width: 100
+        :align: center
+     - Acrylic Sheet
      - 1 pcs
    * - .. image:: _static/bom/19.Gasket.png
         :width: 100
@@ -142,16 +147,16 @@ The following table lists all components included in the **ESP32-IOT-SmartHome-k
         :align: center
      - Phillips Screwdriver
      - 1 pcs
+      * - .. image:: _static/bom/21.sleeve.png
+        :width: 100
+        :align: center
+     - Sleeve
+     - 5 pcs
    * - .. image:: _static/bom/23.screwbag.png
         :width: 100
         :align: center
      - Screw Bag
-     - 1 bag
-   * - .. image:: _static/bom/24.acrylic.png
-        :width: 100
-        :align: center
-     - Acrylic Sheet
-     - 1 set
+     - 3 bags
    * - .. image:: _static/bom/25.glue.png
         :width: 100
         :align: center
