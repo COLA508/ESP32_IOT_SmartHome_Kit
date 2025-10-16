@@ -26,6 +26,10 @@ Course 1：LED Module-Breathing Light
 
  - LED Module → ESP32 IO26
 
+.. image:: _static/COURSE/1.LED.png
+   :width: 600
+   :align: center
+
 **Sample Code:**
 
 .. code-block:: cpp
@@ -786,10 +790,6 @@ Course 9：Speech Recognition Module-Voice-Controlled Light
 
  - Speech Recognition Module → ESP32 IO16、17
  - LED Module → ESP32 IO26
-
-.. image:: _static/COURSE/1.LED.png
-   :width: 600
-   :align: center
 
 **Sample Code:**
 
