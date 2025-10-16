@@ -818,7 +818,7 @@ Course 9：Speech Recognition Module-Voice-Controlled Light
  - Speech Recognition Module → ESP32 IO16、17
  - LED Module → ESP32 IO26
 
-.. image:: _static/COURSE/9.RGB.png
+.. image:: _static/COURSE/9.SPEECH.png
    :width: 600
    :align: center
 
