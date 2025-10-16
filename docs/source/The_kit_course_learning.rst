@@ -85,6 +85,10 @@ Course 2：Light Sensor-Brightness Detection
 
  - Light Sensor → ESP32 IO34
 
+.. image:: _static/COURSE/2.light.png
+   :width: 600
+   :align: center
+
 **Sample Code:**
 
 .. code-block:: cpp
@@ -156,6 +160,10 @@ Course 3：PIR Sensor-Human Body Detection
 
  - PIR Sensor → ESP32 IO33
 
+.. image:: _static/COURSE/3.pir.png
+   :width: 600
+   :align: center
+
 **Sample Code:**
 
 .. code-block:: cpp
@@ -226,6 +234,10 @@ Course 4：Raindrop Sensor-Raindrop Detection
 **wiring:** 
 
  - Raindrop Sensor → ESP32 IO35
+
+.. image:: _static/COURSE/4.RAIN.png
+   :width: 600
+   :align: center
 
 **Sample Code:**
 
