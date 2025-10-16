@@ -530,6 +530,10 @@ Course 7：RFID Module+SG90 Servo-Card access control system
  - RFID Module → ESP32 I2C
  - SG90 Servo  → ESP32 IO13（servo2）
 
+.. image:: _static/COURSE/7.RFID.png
+   :width: 600
+   :align: center
+
 **Sample Code:**
 
 .. code-block:: cpp
@@ -626,6 +630,10 @@ Course 8：Button Module+RGB Light Strip-Ambient Lighting
 
  - Button Module → ESP32 IO32
  - RGB Light Strip  → ESP32 IO5
+
+.. image:: _static/COURSE/8.RGB.png
+   :width: 600
+   :align: center
 
 **Sample Code:**
 
@@ -809,6 +817,10 @@ Course 9：Speech Recognition Module-Voice-Controlled Light
 
  - Speech Recognition Module → ESP32 IO16、17
  - LED Module → ESP32 IO26
+
+.. image:: _static/COURSE/9.RGB.png
+   :width: 600
+   :align: center
 
 **Sample Code:**
 
