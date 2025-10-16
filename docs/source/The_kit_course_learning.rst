@@ -312,6 +312,10 @@ Course 5：DHT11 Sensor+Fan Module-Temperature controlled fan
  - DHT11 Sensor → ESP32 IO15
  - FAN Module → ESP32 IO27
 
+.. image:: _static/COURSE/5.DHT11FAN.png
+   :width: 600
+   :align: center
+
 **Sample Code:**
 
 .. code-block:: cpp
@@ -398,9 +402,12 @@ Course 6：LCD1602 Screen-Environmental Status Display
 
  - LCD1602 Screen → ESP32 I2C
  - DHT11 Sensor → ESP32 IO15
- - PIR Sensor → ESP32 IO33
+ - LIGHT Sensor → ESP32 IO34
  - Raindrop Sensor → ESP32 IO35
 
+.. image:: _static/COURSE/6.LCD.png
+   :width: 600
+   :align: center
 
 **Sample Code:**
 

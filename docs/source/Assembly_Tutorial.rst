@@ -17,7 +17,7 @@ Installation video tutorial
 Wiring
 ---------
 
-.. image:: _static/1/53.wiring.png
+.. image:: _static/1/53.wiring1.png
    :align: center
 
 
