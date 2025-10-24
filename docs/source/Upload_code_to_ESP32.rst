@@ -37,6 +37,10 @@ Download the Code
    :width: 800
    :align: center
 
+.. raw:: html
+
+   <div style="margin-top: 30px;"></div>
+
 .. image:: _static/37.upload.png
    :width: 800
    :align: center
@@ -56,11 +60,11 @@ Download the Code
 
 4. **Modify wifi name and password**
 
- - To control the Smart Room via the app, you must first modify the WiFi name and password in the code to match your network's actual information. Otherwise, the device will not be able to connect to the network, and remote control via the app will be unavailable.
+ - To control the SmartHome using the app, you must first modify the WiFi name and password in the code to your network's actual information.Otherwise, the device will fail to connect to the network, and remote control via the app will be unavailable.
  - Please modify the code to your own WiFi name （SSID）and password as shown in the image below to ensure that the device can connect to the network normally.
 
  .. image:: _static/61.WiFi.png
-   :width: 600
+   :width: 800
    :align: center
 
 .. raw:: html
