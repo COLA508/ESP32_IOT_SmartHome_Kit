@@ -78,6 +78,10 @@ App control
    .. image:: _static/62.IP.png
       :width: 800
       :align: center
+      
+   .. raw:: html
+
+   <div style="margin-top: 30px;"></div>
 
    - If you receive a "Connection failed" message when trying to connect to an IP address on iOS, first go to System Settings, find the "Wi-Fi & Cellular Data" permission for the app, and confirm that Internet access is enabled. If not, enable the permission, then return to the app and try connecting again.  
 
