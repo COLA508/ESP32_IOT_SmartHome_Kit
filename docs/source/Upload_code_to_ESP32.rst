@@ -41,7 +41,7 @@ Download the Code
 
    <div style="margin-top: 30px;"></div>
 
-.. image:: _static/37.upload.png
+.. image:: _static/37.upload1.png
    :width: 800
    :align: center
 
@@ -54,7 +54,7 @@ Download the Code
    - If the folder name of the downloaded code does not match the code file name, a prompt will appear asking if you want to "create a folder with the same name and move the file into it." Select **OK** to confirm.  
    - If this prompt does not appear, you can ignore it.  
 
-   .. image:: _static/38.upload.png
+   .. image:: _static/38.upload1.png
       :width: 600
       :align: center
 
@@ -76,7 +76,7 @@ Select a Development Board
 
 Select **Tools → Board → ESP32 → ESP32 Dev Module** in Arduino IDE.  
 
-.. image:: _static/33.upload.png
+.. image:: _static/33.upload1.png
    :width: 600
    :align: center
 
