@@ -54,6 +54,18 @@ Download the Code
       :width: 600
       :align: center
 
+4. **Modify wifi name and password**
+
+ - To control the Smart Room via the app, you must first modify the WiFi name and password in the code to match your network's actual information. Otherwise, the device will not be able to connect to the network, and remote control via the app will be unavailable.
+ - Please modify the code to your own WiFi name （SSID）and password as shown in the image below to ensure that the device can connect to the network normally.
+
+ .. image:: _static/61.WiFi.png
+   :width: 600
+   :align: center
+
+.. raw:: html
+
+   <div style="margin-top: 30px;"></div>
 
 Select a Development Board
 ~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -134,7 +146,7 @@ Upload Code
    - If the code fails to upload, follow these troubleshooting steps:
    - Confirm that the selected port in **Tools → Port** corresponds to the connected ESP32 board.  
    - Confirm that the correct ESP32 board model is selected in **Tools → Board**.  
-   - Ensure that the CH340 serial driver (or other required USB driver) is installed and the board is recognized in the device manager.  
+   - Ensure that the CH340 serial driver （or other required USB driver）is installed and the board is recognized in the device manager.  
    - Try changing the USB port or using a different USB data cable that supports data transfer.  
    - Confirm that the ESP32 core package is installed and all required libraries are imported.  
    - Use the recommended library versions; mismatched versions may cause compilation or upload errors.  
@@ -148,7 +160,7 @@ Upload Code
 Option 2:Direct Burn Program
 ---------------------------
 
-- Of course, if you find the above steps too cumbersome, you can also use Espressif's official flashing tool. We've packaged the program as a bin file, so you can flash it directly to the ESP32 development board without importing libraries or downloading the ESP32 core package, allowing you to experience the kit's features more quickly.
+**Of course, if you find the above steps cumbersome or encounter unresolved errors during the Arduino IDE flashing process, you can also use Espressif's official flashing tool.We've packaged the complete program as a bin file. You can flash the firmware directly to your ESP32 development board without importing libraries or downloading the ESP32 core package, helping you quickly and conveniently experience the full capabilities of this kit.**
 
 
 Install CH340 Driver
