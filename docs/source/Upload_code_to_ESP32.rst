@@ -64,7 +64,7 @@ Download the Code
  - Please modify the code to your own WiFi name （SSID）and password as shown in the image below to ensure that the device can connect to the network normally.
 
  .. image:: _static/61.WiFi.png
-   :width: 800
+   :width: 900
    :align: center
 
 .. raw:: html
