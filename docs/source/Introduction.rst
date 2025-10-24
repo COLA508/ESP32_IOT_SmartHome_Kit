@@ -177,7 +177,7 @@ Function Display
 
  - RFID card swipe module: Door unlocking with a card swipe
 
- - Voice recognition module: Voice control of lights, fans, and RGB light strips
+ - SPEECH recognition module: Voice control of lights, fans, and RGB light strips
 
  - LCD1602 display: Real-time display of sensor data and system status
 
@@ -185,7 +185,7 @@ Function Display
 
  - Servo: Simulate door and window switches
 
- - LED and fan: Lighting and temperature control
+ - LED and Fan: Lighting and temperature control
 
 （此处会插入一段功能展示的视频）
 
