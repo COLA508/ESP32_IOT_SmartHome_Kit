@@ -64,7 +64,7 @@ Download the Code
  - Please modify the code to your own WiFi name （SSID）and password as shown in the image below to ensure that the device can connect to the network normally.
 
  .. image:: _static/61.WiFi.png
-   :width: 900
+   :width: 1000
    :align: center
 
 .. raw:: html
@@ -77,7 +77,7 @@ Select a Development Board
 Select **Tools → Board → ESP32 → ESP32 Dev Module** in Arduino IDE.  
 
 .. image:: _static/33.upload1.png
-   :width: 600
+   :width: 800
    :align: center
 
 .. raw:: html
