@@ -72,4 +72,15 @@ Frequently Asked Questions
 
 ----
 
+*11.The app cannot connect to the ESP32 development board/cannot be controlled using the app.*
+
+ - If you are using the Arduino IDE to program:
+Please confirm that you have changed the WiFi name and password in the code to your own network information.
+
+ - If you are using Espressif's official programming tool:
+Please confirm that you have correctly configured the WiFi according to the network configuration tutorial.
+
+ - If you still cannot connect:
+It is recommended to power cycle the device and then try connecting again.
+
 *If you encounter other problems or cannot solve them yourself, please contact the after-sales technical support team and we will provide you with assistance in a timely manner.*
