@@ -63,8 +63,8 @@ Download the Code
  - To control the SmartHome using the app, you must first modify the WiFi name and password in the code to your network's actual information.Otherwise, the device will fail to connect to the network, and remote control via the app will be unavailable.
  - Please modify the code to your own WiFi name （SSID）and password as shown in the image below to ensure that the device can connect to the network normally.
 
- .. image:: _static/61.WiFi.png
-   :width: 1000
+ .. image:: _static/61.WiFi1.png
+   :width: 800
    :align: center
 
 .. raw:: html
