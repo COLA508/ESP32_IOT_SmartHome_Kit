@@ -224,7 +224,7 @@ Burn firmware
 
    <div style="margin-top: 30px;"></div>
 
-4. Follow the instructions in the picture to import the downloaded firmware (the file has been moved to the bin folder). Select the firmware file in the box on the left side of the software interface and enter "0" in the box on the right to complete the firmware setting.
+4. Follow the instructions in the picture to import the downloaded firmware named "10.10.SmartHome_CompleteCode", check the firmware file in the box on the left of the software interface, and enter "0" in the box on the right to complete the settings for importing the firmware.
 
 .. image:: _static/47.TOOL.png
    :width: 600
@@ -233,6 +233,8 @@ Burn firmware
 .. raw:: html
 
    <div style="margin-top: 30px;"></div>
+
+
 
 5. Set the parameters as shown in the picture: **SPI SPEED** select **80MHz**, **SPI MODE** select **DIO**, **COM** select the serial port actually connected to the computer, and **BAUD** set to **921600**.
 
