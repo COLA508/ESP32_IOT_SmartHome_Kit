@@ -74,6 +74,20 @@ App control
 
 .. note::
 
+   - To ensure the app can successfully connect to the ESP32, please configure the following settings based on the flashing method used:
+
+ **For users flashing the program using the Arduino IDE**
+
+ You can modify the Wi-Fi name (SSID) and password directly in the code to match your local network information.
+
+ After flashing, the ESP32 will automatically connect to the designated Wi-Fi network without any additional steps.
+
+ **For users flashing the firmware using Espressif's official flashing tool**
+
+ You must first configure the Wi-Fi network to complete the network connection.
+
+ Click here to jump to the network configuration tutorial and follow the steps to complete the connection setup. :ref:`Direct Burn Program`.
+
    - The kit's IP address will be displayed on the LCD1602 screen each time the development board is powered on. Because the IP address may change randomly, if your mobile app cannot connect to the kit, first confirm whether the IP address has changed and enter the latest address to connect.
    .. image:: _static/62.IP.png
       :width: 800
