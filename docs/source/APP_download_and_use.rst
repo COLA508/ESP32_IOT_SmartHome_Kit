@@ -103,7 +103,7 @@ App control
       :width: 600
       :align: center
 
-4. The ESP32 and the mobile phone must be connected to the same Wi-Fi network to successfully establish a connection with the app.
+ 4. The ESP32 and the mobile phone must be connected to the same Wi-Fi network to successfully establish a connection with the app.
 
 
 3. APP Interface Operation Guide
