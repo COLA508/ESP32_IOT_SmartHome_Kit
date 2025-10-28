@@ -74,21 +74,21 @@ App control
 
 .. note::
 
-   - To ensure the app can successfully connect to the ESP32, please configure the following settings based on the flashing method used:
+ 1. To ensure the app can successfully connect to the ESP32, please configure the following settings based on the flashing method used:
 
  **For users flashing the program using the Arduino IDE**
 
- You can modify the Wi-Fi name (SSID) and password directly in the code to match your local network information.
+  - You can modify the Wi-Fi name (SSID) and password directly in the code to match your local network information.
 
- After flashing, the ESP32 will automatically connect to the designated Wi-Fi network without any additional steps.
+  - After flashing, the ESP32 will automatically connect to the designated Wi-Fi network without any additional steps.
 
  **For users flashing the firmware using Espressif's official flashing tool**
 
- You must first configure the Wi-Fi network to complete the network connection.
+  - You must first configure the Wi-Fi network to complete the network connection.
 
- Click here to jump to the network configuration tutorial and follow the steps to complete the connection setup. :ref:`Direct Burn Program`.
+  - Click here to jump to the network configuration tutorial and follow the steps to complete the connection setup. :ref:`Direct Burn Program`.
 
-   - The kit's IP address will be displayed on the LCD1602 screen each time the development board is powered on. Because the IP address may change randomly, if your mobile app cannot connect to the kit, first confirm whether the IP address has changed and enter the latest address to connect.
+ 2. The kit's IP address will be displayed on the LCD1602 screen each time the development board is powered on. Because the IP address may change randomly, if your mobile app cannot connect to the kit, first confirm whether the IP address has changed and enter the latest address to connect.
    .. image:: _static/62.IP.png
       :width: 800
       :align: center
@@ -97,7 +97,7 @@ App control
 
     <div style="margin-top: 30px;"></div>
 
-   - If you receive a "Connection failed" message when trying to connect to an IP address on iOS, first go to System Settings, find the "Wi-Fi & Cellular Data" permission for the app, and confirm that Internet access is enabled. If not, enable the permission, then return to the app and try connecting again.  
+ 3. If you receive a "Connection failed" message when trying to connect to an IP address on iOS, first go to System Settings, find the "Wi-Fi & Cellular Data" permission for the app, and confirm that Internet access is enabled. If not, enable the permission, then return to the app and try connecting again.  
 
    .. image:: _static/56.APP.jpg
       :width: 600

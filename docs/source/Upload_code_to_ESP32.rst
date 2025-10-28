@@ -224,7 +224,7 @@ Burn firmware
 
    <div style="margin-top: 30px;"></div>
 
-4. Follow the instructions in the picture to import the downloaded firmware named "10.10.SmartHome_CompleteCode", check the firmware file in the box on the left of the software interface, and enter "0" in the box on the right to complete the settings for importing the firmware.
+4. Follow the instructions in the picture to import the downloaded firmware named ".10.SmartHome_CompleteCode", check the firmware file in the box on the left of the software interface, and enter "0" in the box on the right to complete the settings for importing the firmware.
 
 .. image:: _static/47.TOOL.png
    :width: 600
