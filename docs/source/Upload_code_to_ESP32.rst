@@ -288,9 +288,13 @@ Burn firmware
 
 8. For users using Espressif's official flashing tool to flash the firmware, you must first perform Wi-Fi network configuration to complete the network connection configuration. Please follow the steps below:
 
-.. image:: _static/63.wifi.jpg
+.. image:: _static/64.wifi.jpg
    :width: 800
    :align: center
+
+.. raw:: html
+
+   <div style="margin-top: 30px;"></div>
 
 （1）Enter network configuration mode: After flashing the firmware to the device, press the RST button. Open your phone's Wi-Fi settings, find the hotspot named "LAFVIN_SmartHome," and connect to it.
 
