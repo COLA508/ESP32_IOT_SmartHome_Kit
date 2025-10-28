@@ -234,7 +234,13 @@ Burn firmware
 
    <div style="margin-top: 30px;"></div>
 
+.. image:: _static/63.bin.png
+   :width: 800
+   :align: center
 
+.. raw:: html
+
+   <div style="margin-top: 30px;"></div>
 
 5. Set the parameters as shown in the picture: **SPI SPEED** select **80MHz**, **SPI MODE** select **DIO**, **COM** select the serial port actually connected to the computer, and **BAUD** set to **921600**.
 
