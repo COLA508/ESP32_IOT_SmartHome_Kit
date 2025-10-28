@@ -296,9 +296,9 @@ Burn firmware
 
    <div style="margin-top: 30px;"></div>
 
-（1）Enter network configuration mode: After flashing the firmware to the device, press the RST button. Open your phone's Wi-Fi settings, find the hotspot named "LAFVIN_SmartHome," and connect to it.
+（1）Enter network configuration mode: After flashing the firmware to the device, press the RST button. Open your phone's Wi-Fi settings, find the hotspot named **LAFVIN_SmartHome** ， and connect to it.
 
-（2）Access the network configuration page: After successfully connecting to Wi-Fi, maintain the connection. Open your phone's browser and enter "192.168.4.1" in the address bar to access the device's network configuration page.
+（2）Access the network configuration page: After successfully connecting to Wi-Fi, maintain the connection. Open your phone's browser and enter **192.168.4.1**  in the address bar to access the device's network configuration page.
 
 （3）Enter network information: On the network configuration page, enter the Wi-Fi name (SSID) and password. Click the "Connect to WiFi" button, and the system will automatically connect to the specified network.
 
