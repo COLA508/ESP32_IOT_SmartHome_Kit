@@ -135,9 +135,7 @@ Download the Driver
       :width: 600
       :align: center
 
-4. Alternatively, you can download the prepared installation package directly:  
-   `CH340 Installation Package（Windows）<https://www.dropbox.com/scl/fo/c4bb59fr42qcs9cxgexan/AIMImtqevecMqYNMJVK1ZBM?rlkey=9afntuwy2usxfxbl7xjkoirsy&st=89a5bx6b&dl=1>`_  
-
+4. Alternatively, you can download the prepared installation package directly: `CH340 Installation Package (Windows) <https://www.dropbox.com/scl/fo/c4bb59fr42qcs9cxgexan/AIMImtqevecMqYNMJVK1ZBM?rlkey=9afntuwy2usxfxbl7xjkoirsy&st=89a5bx6b&dl=1>`_
 
 Install the Driver
 ~~~~~~~~~~~~~~~~~~~~
