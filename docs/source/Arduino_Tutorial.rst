@@ -1,7 +1,13 @@
 Arduino IDE Getting Started Tutorial
 ====================================
 
-*The Arduino IDE is an open-source programming tool officially provided by Arduino, supporting C/C++ development. It provides users with simple and intuitive code writing, compiling, and uploading functions, making it easy to burn programs to development boards such as Arduino and ESP32. The IDE includes extensive built-in example code and supports library file extensions, allowing developers to quickly access drivers for various sensors and modules, enabling a rich set of hardware interaction features. With its cross-platform support (Windows, macOS, and Linux), the Arduino IDE is widely used in education, makerspaces, and IoT development, making it an essential tool for both beginners and advanced embedded development learners.*
+The Arduino IDE is an open-source programming tool officially provided by Arduino, supporting C/C++ development. 
+
+It provides users with simple and intuitive code writing, compiling, and uploading functions, making it easy to burn programs to development boards such as Arduino and ESP32. 
+
+The IDE includes extensive built-in example code and supports library file extensions, allowing developers to quickly access drivers for various sensors and modules, enabling a rich set of hardware interaction features.
+
+With its cross-platform support (Windows, macOS, and Linux), the Arduino IDE is widely used in education, makerspaces, and IoT development, making it an essential tool for both beginners and advanced embedded development learners.
 
 ----
 
@@ -17,7 +23,7 @@ Install Arduino IDE on Windows
 1. Visit the official Arduino website and go to the software download page:  
    `Arduino IDE Download <https://www.arduino.cc/en/software/>`_
 
-   .. image:: _static/2.arduino_install.png
+   .. image:: _static/2.arduino_install3.png
       :alt: Arduino IDE official website
       :align: center
 
@@ -53,6 +59,7 @@ Install Arduino IDE on Windows
       :alt: Installation finished
       :align: center
 
+----
 
 Install Arduino IDE on MacOS
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -67,14 +74,14 @@ Install Arduino IDE on MacOS
       :alt: Arduino IDE installation on macOS
       :align: center
 
+----
 
 Install Arduino IDE on Linux
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-For Linux users, please follow the official tutorial for Arduino IDE 2.0 installation:  
+For Linux users, please follow the official tutorial for Arduino IDE 2.0 installation: `Linux Installation Guide <https://docs.arduino.cc/software/ide-v2/tutorials/getting-started/ide-v2-downloading-and-installing#linux>`_
 
-`Linux Installation Guide <https://docs.arduino.cc/software/ide-v2/tutorials/getting-started/ide-v2-downloading-and-installing#linux>`_
-
+----
 
 Open the Arduino IDE
 ~~~~~~~~~~~~~~~~~~~~
@@ -115,63 +122,104 @@ If you connect the board to the computer without installing the driver, the devi
    :width: 600
    :align: center
 
+----
 
 Download the Driver
 ~~~~~~~~~~~~~~~~~~~~
 
-1. Visit the official website of the CH340 Driver:  
-   `CH340 Driver <https://www.wch.cn/products/ch340.html>`_  
+1. Visit the official website of the CH340 Driver: `CH340 Driver <https://www.wch.cn/products/ch340.html>`_  
 
-2. Select the version that matches your computer system.  
-   (This tutorial uses **Windows 11** as an example.)  
+2. Select the version that matches your computer system.（This tutorial uses **Windows 11** as an example）.
 
-   .. image:: _static/10.CH340.png
-      :width: 600
-      :align: center
+.. raw:: html
+
+   <div style="margin-top: 30px;"></div>
+
+.. image:: _static/10.CH340.png
+   :width: 600
+   :align: center
+
+.. raw:: html
+
+   <div style="margin-top: 30px;"></div>
 
 3. Select the first Windows version, go to the download page, and click the **Download** button.  
 
-   .. image:: _static/11.CH340.png
-      :width: 600
-      :align: center
+.. raw:: html
+
+   <div style="margin-top: 30px;"></div>
+
+.. image:: _static/11.CH340.png
+   :width: 600
+   :align: center
+
+.. raw:: html
+
+   <div style="margin-top: 30px;"></div>
 
 4. Alternatively, you can download the prepared installation package directly: `CH340 Installation Package (Windows) <https://www.dropbox.com/scl/fo/c4bb59fr42qcs9cxgexan/AIMImtqevecMqYNMJVK1ZBM?rlkey=9afntuwy2usxfxbl7xjkoirsy&st=89a5bx6b&dl=1>`_
+
+----
 
 Install the Driver
 ~~~~~~~~~~~~~~~~~~~~
 
 1. After downloading, open the driver file and click **Install**.  
 
-   .. image:: _static/13.CH340.png
-      :width: 600
-      :align: center
+.. raw:: html
+
+   <div style="margin-top: 30px;"></div>
+
+.. image:: _static/13.CH340.png
+   :width: 600
+   :align: center
+
+.. raw:: html
+
+   <div style="margin-top: 30px;"></div>
 
 2. When the installation is successful, you will see the following confirmation message:  
 
-   .. image:: _static/14.CH340.png
-      :width: 600
-      :align: center
+.. raw:: html
+
+   <div style="margin-top: 30px;"></div>
+
+.. image:: _static/14.CH340.png
+   :width: 600
+   :align: center
+
+.. raw:: html
+
+   <div style="margin-top: 30px;"></div>
 
 .. note::
 
    In some cases, you may need to **restart Windows** after installation to ensure the driver takes effect.  
 
+----
 
 Checking Correct Driver Installation in Device Manager
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Once the driver is installed, connect the ESP32 board to your computer.  
+
 You should see the correct name and port number appear in the **Device Manager** (for example: COM28).  
+
+.. raw:: html
+
+   <div style="margin-top: 30px;"></div>
 
 .. image:: _static/15.CH340.png
    :width: 600
    :align: center
 
+----
 
 Checking Correct Driver Installation in Arduino IDE
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 1. Open the Arduino IDE.  
+
 2. Go to **Tools → Port** and select the COMx port that matches the one you saw in Device Manager.  
 
 .. image:: _static/16.CH340.png
@@ -201,6 +249,7 @@ Add Additional Boards Manager URL
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 1. Open the Arduino IDE, click **File → Preferences** in the upper left corner, and copy and paste the following address into the *Additional Board Manager URLs* input box.  
+
 2. After entering the URL, click **OK**.  
 
 .. raw:: html
@@ -210,24 +259,40 @@ Add Additional Boards Manager URL
      <button onclick="navigator.clipboard.writeText(document.getElementById('esp32-url').innerText)" style="padding:4px 8px;background:#007bff;color:#fff;border:none;border-radius:4px;cursor:pointer;"> Copy</button>
    </div>
 
+.. raw:: html
+
+   <div style="margin-top: 30px;"></div>
+
 .. image:: _static/18.URL.png
    :width: 600
    :align: center
+
+.. raw:: html
+
+   <div style="margin-top: 30px;"></div>
 
 .. image:: _static/19.URL.png
    :width: 600
    :align: center
 
+.. raw:: html
+
+   <div style="margin-top: 30px;"></div>
+
 .. image:: _static/20.URL.png
    :width: 600
    :align: center
 
+.. raw:: html
+
+   <div style="margin-top: 30px;"></div>
 
 .. admonition:: Precaution
    :class: note
 
    - After completing this step, you need to close and reopen the Arduino IDE.
 
+----
 
 Download the  ESP32 Core Package 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -238,33 +303,65 @@ Download the  ESP32 Core Package
       :width: 600
       :align: center
 
+.. raw:: html
+
+   <div style="margin-top: 30px;"></div>
+
 2. Enter **ESP32** in the search box and press Enter.  
 
 3. Find the core package titled *esp32 by Espressif Systems*, select version **3.2.0** from the drop-down menu, and click **Install** to download and install it.  
 
-   .. image:: _static/22.ESP32_CORE.png
-      :width: 600
-      :align: center
+
+.. image:: _static/22.ESP32_CORE.png
+   :width: 600
+   :align: center
+
+.. raw:: html
+
+   <div style="margin-top: 30px;"></div>
 
 4. Please wait for the download progress bar in the lower right corner to complete.  
 
-   .. image:: _static/23.ESP32_CORE.png
-      :width: 600
-      :align: center
+.. raw:: html
+
+   <div style="margin-top: 30px;"></div>
+
+.. image:: _static/23.ESP32_CORE.png
+   :width: 600
+   :align: center
+
+.. raw:: html
+
+   <div style="margin-top: 30px;"></div>
 
 5. When the download is complete, the message **Successfully installed platform esp32:3.2.0** will be displayed.  
 
-   .. image:: _static/24.ESP32_CORE.png
-      :width: 600
-      :align: center
+.. raw:: html
+
+   <div style="margin-top: 30px;"></div>
+
+.. image:: _static/24.ESP32_CORE.png
+   :width: 600
+   :align: center
+
+.. raw:: html
+
+   <div style="margin-top: 30px;"></div>
 
 6. Check if the installation is successful:  
 Click **Tools → Board → esp32** to check whether an ESP32 development board is available for selection.  
 
-   .. image:: _static/25.ESP32_CORE.png
-      :width: 600
-      :align: center
+.. raw:: html
 
+   <div style="margin-top: 30px;"></div>
+
+.. image:: _static/25.ESP32_CORE.png
+   :width: 600
+   :align: center
+
+.. raw:: html
+
+   <div style="margin-top: 30px;"></div>
 
 .. admonition:: Precaution
    :class: note
@@ -280,53 +377,79 @@ Click **Tools → Board → esp32** to check whether an ESP32 development board 
 
 - Arduino libraries can significantly simplify the development process.  
 - They encapsulate commonly used functions and hardware driver code, allowing users to simply call ready-made functions without writing complex low-level code from scratch.  
-
 - For example, the **LiquidCrystal_I2C** library allows users to drive an LCD1602 display with just a few lines of code.  
 - A wealth of community-provided third-party libraries also allows for quick integration with various sensors and modules.  
-These library functions make it easy to interact with hardware and expand Arduino's functionality.
+- These library functions make it easy to interact with hardware and expand Arduino's functionality.
 
+----
 
 Download Libraries
 ~~~~~~~~~~~~~~~~~~
 
-1. We've compiled all the libraries necessary to run this suite. Please click the link below to download them and follow the instructions to complete the installation:  
-   `Download libraries <https://www.dropbox.com/scl/fo/syf1zstu58f4xlcld2nss/ACJOi93PcIafo5yGabrprDA?rlkey=hoc2undykymrxac7z8nclpk9u&st=el86zaw9&dl=1>`_
+1. We've compiled all the libraries necessary to run this suite. Please click the link below to download them and follow the instructions to complete the installation:  `Download libraries <https://www.dropbox.com/scl/fo/syf1zstu58f4xlcld2nss/ACJOi93PcIafo5yGabrprDA?rlkey=hoc2undykymrxac7z8nclpk9u&st=el86zaw9&dl=1>`_
 
 2. Unzip the downloaded library file. The library file storage path is **Code and Libraries** → **Libraries** . Open it and confirm that it contains the library file shown in the figure below. 
+
+.. raw:: html
+
+   <div style="margin-top: 30px;"></div>
 
 .. image:: _static/26.lib.png
    :width: 700
    :align: center
 
+----
 
 Import Libraries
 ~~~~~~~~~~~~~~~~
 
 1. Open the Arduino IDE and click **Sketch → Include Library → Add .ZIP Library**.  
 
-   .. image:: _static/27.lib.png
-      :width: 600
-      :align: center
+.. raw:: html
+
+   <div style="margin-top: 30px;"></div>
+
+.. image:: _static/27.lib.png
+   :width: 600
+   :align: center
+
+.. raw:: html
+
+   <div style="margin-top: 30px;"></div>
 
 2. In the pop-up window, locate the folder of the library you just downloaded and unzipped, select it, and click **Open** to complete the import.  
 
-   .. image:: _static/28.lib.png
-      :width: 600
-      :align: center
+.. raw:: html
+
+   <div style="margin-top: 30px;"></div>
+
+.. image:: _static/28.lib.png
+   :width: 600
+   :align: center
+
+.. raw:: html
+
+   <div style="margin-top: 30px;"></div>
 
 3. If the library file is imported successfully, the Arduino IDE output window will display the message: *Library installed*.  
 
-   .. image:: _static/31.lib.png
-      :width: 600
-      :align: center
+.. raw:: html
 
+   <div style="margin-top: 30px;"></div>
+
+.. image:: _static/31.lib.png
+   :width: 600
+   :align: center
+
+.. raw:: html
+
+   <div style="margin-top: 30px;"></div>
 
 .. admonition:: Precaution
    :class: note
 
    - Arduino IDE does not support importing multiple libraries at once; you must import one library at a time.  
    - If a library file already exists, a prompt will appear asking whether to overwrite it. It is recommended to confirm overwrite to avoid program errors caused by different library versions.  
-
 
 .. image:: _static/29.lib.png
    :width: 600
@@ -339,6 +462,7 @@ Import Libraries
       :width: 600
       :align: center
 
+----
 
 Download Libraries Using Arduino IDE
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
