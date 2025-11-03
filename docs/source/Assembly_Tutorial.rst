@@ -96,7 +96,7 @@ Parts list: Basswood board with "A"、 ESP32 development board、 M3*8mm screw (
 
 The installation is shown in the following figure:
 
-.. image:: _static/1/3.ESP322.png
+.. image:: _static/1/3.ESP321.png
    :alt: ESP32 development board installation
    :align: center
 
