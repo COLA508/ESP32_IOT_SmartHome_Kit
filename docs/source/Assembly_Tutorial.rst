@@ -92,7 +92,7 @@ Screw size comparison
 Step 1: Install the ESP32 development board
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-Parts list: Basswood board with "A"、 ESP32 development board、 M3*8mm screw (8 PCS)、 M3*10mm copper pillar (4 PCS).
+Parts list: Basswood board with "A"、 ESP32 development board、 M3*6mm screw (8 PCS)、 M3*10mm copper pillar (4 PCS).
 
 The installation is shown in the following figure:
 
